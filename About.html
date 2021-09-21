@@ -4,28 +4,41 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=0.5">
     <title>About Us.</title>
-    <link rel=stylesheet href="css/main.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.8/fullpage.min.css" integrity="sha256-+dIh4jG2jQTHZwW81yUo8h6tzXWcNumyNL5XPZbwp1E=" crossorigin="anonymous" />
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel=stylesheet href="About.css">
+    <link rel="stylesheet" href="full-page-scroll.min.css"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 </head>
-<div id="fullpage">
-<div class="section s1">
-<div class="background">
-<img src="cool-background.png" style="width:100%";>
-<div class="about">About Us</div>
-</div>
-</div>
 <body>
-<div class="section s2">
-<div class="essay">
-What began as an opportunity to bring immensely popular sport to urban masses has evolved into coaching athletes to professional level. 
-<br></br>
-Dedicated to offering our members the best possible experience, we’ve proudly been at the forefront of urban sports while still maintaining that familiar, neighborhood feel.</div>
+<div id="main" class="scroll-container">
+    <section>
+
+            <img src="cool-background.png" style="width:100%"  alt="error"/>
+            <div class="about">About Us</div>
+
+    </section>
+
+    <section>
+        <div class="essay">
+            What began as an opportunity to bring popular sport to urban masses has evolved into coaching
+            athletes at professional level.
+            <br> <br>
+            Dedicated to offering our members the best possible experience, we proudly are at the forefront of urban
+            sports while still maintaining that familiar, neighborhood feel.
+        </div>
+    </section>
 </div>
-</div>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.8/fullpage.min.js" integrity="sha256-caNcSA0LvOCX90PTuEbwl+V09xPMca13CJUasl+VCtk=" crossorigin="anonymous"></script>
-<script>
-new fullpage('#fullpage', {autoScrolling: true});
+
+<script src="full-page-scroll.min.js"></script>
+
+<script type="text/javascript">
+    new fullScroll({
+        mainElement: "main",
+        displayDots: false,
+        dotsPosition: "right",
+        animateTime: 1,
+        animateFunction: "ease",
+    });
 </script>
 </body>
 </html>

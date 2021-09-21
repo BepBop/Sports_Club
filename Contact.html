@@ -4,114 +4,35 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contacts</title>
-    <link rel=stylesheet href="css/main.css"> 
-    <style>
+    <link rel=stylesheet href="Contact.css">
+</head>
 
-html, body {
-  overflow: hidden;
-}
-
-.hero {
-    background:rgb(6, 26, 207); 
-    transform:  skewY(4deg);
-    transform-origin: 100%;
-    margin-top: 7%;
-    
-    
-}
-
-.sign
-{
-  font-size: 450%;
-  color: aliceblue;
-  font-family: sans-serif;
-  transform: skewY(-4deg);
-  padding-left: 25%;
-  padding-right: 25%;
-  padding-top: 15%;
-  padding-bottom: 1.5%;
-  font-weight: bolder;
-}
-
-.sign2
-{  font-size: 125%;
-  color: aliceblue;
-  font-family: sans-serif;
-  transform: skewY(-4deg);
-  padding-bottom: 5%;
-  padding-right: 25%;
-  padding-left: 25%;
-}
-.form
-{
-  font-family: sans-serif;
-  transform: skewY(-4deg);
-  padding-right: 25%;
-  padding-left: 25%;
-  padding-bottom: 25%;
-  width: 1000px;
-  height: 100px;
-}
-
-#emailinput {
-
-    height: 40px;
-    width: 400px;
-    font-size: 150%;
-    
-}
-
-
-button
-{
-  
-  height: 42.1px;
-  color: white;
-  background-color: rgba(0, 0, 0, 0) ;
-  font-size: 150%;
-  border-style:solid;
-  margin-left:1%;
-}
-
-::-webkit-input-placeholder { padding:5px;
-}
-
-button:hover
-{
-  
-  background-color: rgb(255, 255, 255) ;
-  color:rgb(6, 26, 207); 
-  cursor: pointer;
-}
-
-    </style>
 
 <body>
-
-
 <div class="hero">
-<div class="sign">Sign up to the club</div>
-<div class="sign2">Comming this summer.</div>
-<div class="form">
-  <input id="emailinput"  placeholder="Email" type="text" onblur="validateEmail(this);" />
-  <button type="button">I'm Interested</button>
-</div>
+    <div class="sign">Sign up to the club <span style='font-size:100px;'>&#128512;</span></div>
+    <div class="sign2">Coming this summer.</div>
+    <div class="form">
+        <label for="emailinput"></label><input id="emailinput" placeholder="Email" type="text"
+                                               onblur="validateEmail(this);"/>
+        <button type="button">I'm Interested</button>
+    </div>
 
 </div>
 
-</body>
 
 <script>
-  function validateEmail(emailField){
-        var reg = /^([A-Za-z0-9_\-\.])+\@([A-Za-z0-9_\-\.])+\.([A-Za-z]{2,4})$/;
+    function validateEmail(emailField) {
+        let reg = /^([A-Za-z0-9_\-.])+@([A-Za-z0-9_\-.])+\.([A-Za-z]{2,4})$/;
 
-        if (reg.test(emailField.value) == false) 
-        {
+        if (reg.test(emailField.value) === false) {
             alert('Invalid Email');
             return false;
         }
-            alert('Sucess!');
+        alert('Success!');
         return true;
 
-}
+    }
 </script>
+</body>
+</html>
