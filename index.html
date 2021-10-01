@@ -1,96 +1,85 @@
-<html lang="HTML5">
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
 
-<link rel="stylesheet" href="full-page-scroll.min.css"/>
-<link rel="stylesheet" href="main.css"/>
+    <link rel="stylesheet" type="text/css" href="main.css"/>
+    <link rel="stylesheet" type="text/css" href="fullpage.css"/>
 
+
+</head>
 
 <body>
-<div id="main" class="scroll-container">
-    <section>
-        <div class="navbar">
-            <img class="logo" src="POO.png" alt="error"/>
+<div id="fullpage">
+
+
+    <div class="section ">
+        <img id="logo" src="POO.png" alt="error"/>
+
+        <nav>
             <a href="About.html">About</a>
             <a href="Contact.html">Contact</a>
-        </div>
-        <div class="slogan">WE ARE THE BLUE THAT BELIEVES IN YOU.</div>
-    </section>
+        </nav>
 
-    <section>
-        <video autoplay muted loop class="video">
-            <source src="Untitled.m4v"/>
+        <div id="slogan">
+            <div>WE ARE THE BLUE</div>
+            <div>THAT BELIEVE IN</div>
+            <div>YOU!</div>
+        </div>
+    </div>
+
+
+    <div class="section ">
+
+        <video data-autoplay muted data-keepplaying loop>
+            <source src="Untitled.m4v">
         </video>
-        <button class="button">START TRAINING NOW</button>
-    </section>
-
-    <section>
-        <div class="container_1">
-
-            <div class="container2">
-                <img class="pica" src="3.jpg" height=100% alt="error"/>
-                <div class="a">Skateboarding.</div>
-            </div>
-
-            <div class="container3">
-                <div class="b">Football.</div>
-                <img class="picb" src="5.jpg" height=100% alt="error"/>
-            </div>
-
-        </div>
-    </section>
-
-    <section>
-
-        <div class="container_2">
-
-
-
-            <div class="container2">
-                <img class="pica" src="8.jpg" height=100% alt="error"/>
-                <div class="a">Skateboarding.</div>
-            </div>
-
-            <div class="container3">
-                <div class="b">Football.</div>
-                <img class="picb" src="9.jpg" height=100% alt="error"/>
-            </div>
-
-
-
+        <div id="btn">
+            <button>START TRAINING NOW</button>
         </div>
 
 
-    </section>
+    </div>
 
+    <div class="section ">
+        <div id="main">
+            <div class="skate">
+                <img src="3.jpg" id="pica">
+                <div class="a">Skateboarding.</div>
+            </div>
+            <div class="foot">
+                <div class="a">Football.</div>
+                <img src="5.jpg" id="picb" alt="Football"/>
+            </div>
 
+            <div class="ath">
+                <img src="8.jpg" alt="Athletics"/>
+                <div class="a">Athletics.</div>
+            </div>
+            <div class="bask">
+                <div class="a">Basketball.</div>
+                <img src="9.jpg" alt="Basketball"/>
+            </div>
+
+        </div>
+    </div>
 
 </div>
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<script src="full-page-scroll.min.js"></script>
-
-<script type="text/javascript">
-    new fullScroll({
-        mainElement: "main",
-        displayDots: false,
-        dotsPosition: "right",
-        animateTime: 1,
-        animateFunction: "ease",
-    });
-</script>
-
+<script src="fullpage.js"></script>
 <script>
-    $("button").click(function () {
-        $('html,body').animate({
-                scrollTop: $(".container").offset().top
-            },
-            'slow');
+    new fullpage('#fullpage', {
+        //options here
+        autoScrolling: true,
+        continuousVertical: true,
     });
 </script>
+
+
 
 </body>
 </html>
-
-
-
-
-
