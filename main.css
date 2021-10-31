@@ -136,7 +136,7 @@ button {
 
 
 .skate, .ath {
-    background-color: sandybrown;
+    //background-color: sandybrown;
     display: flex;
     min-width: 50vw;
     max-height: 100vh;
@@ -144,7 +144,7 @@ button {
 }
 
 .foot, .bask {
-    background-color: beige;
+    //background-color: beige;
     display: flex;
     justify-content: flex-end;
     min-width: 50vw;
