@@ -170,3 +170,26 @@ function main {}
         flag = false;
     }
 
+
+
+function ab() {
+
+    if (flag) {
+
+        console.log(this);
+        sex = this;
+
+
+        this.src = images[i];
+
+        if (i < images.length - 1) {
+            i++;
+        } else {
+            i = 0;
+
+        }
+
+        setTimeout("ab.call(sex)", 1000);
+    }
+
+}

@@ -69,8 +69,8 @@ nav a:hover {
 }
 
 .sec {
-/ / position: absolute;
-/ / background-color: #000e8d;
+//position: absolute;
+//background-color: #000e8d;
 }
 
 video {
@@ -111,7 +111,7 @@ button {
     overflow-x: hidden;
     display: flex;
     font-size: 2.5vw;
-    font-family: Gilroy-Bold;
+    font-family: Gilroy-Bold, sans-serif;
     color: #000e8d;
 }
 
@@ -151,6 +151,12 @@ button {
     max-height: 100vh;
 }
 
+.foot>img , .bask>img , .skate>img , .ath>img {
 
+    transform: scale(0.80);
+}
 
+.foot>img:hover , .bask>img:hover , .skate>img:hover , .ath>img:hover {
 
+    transform: scale(0.95);
+}
