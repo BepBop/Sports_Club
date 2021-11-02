@@ -49,6 +49,7 @@ nav a {
 nav a:hover {
     background-color: #000e8d;
     color: white;
+
 }
 
 #slogan {
@@ -69,8 +70,8 @@ nav a:hover {
 }
 
 .sec {
-//position: absolute;
-//background-color: #000e8d;
+/ / position: absolute;
+/ / background-color: #000e8d;
 }
 
 video {
@@ -136,27 +137,31 @@ button {
 
 
 .skate, .ath {
-    //background-color: sandybrown;
+
     display: flex;
     min-width: 50vw;
-    max-height: 100vh;
-
+    //max-height: 100vh;
 }
 
 .foot, .bask {
-    //background-color: beige;
+
     display: flex;
     justify-content: flex-end;
     min-width: 50vw;
-    max-height: 100vh;
+    //max-height: 100vh;
 }
 
-.foot>img , .bask>img , .skate>img , .ath>img {
+.foot img, .bask img, .skate img, .ath img {
 
-    transform: scale(0.80);
+    transition: width 1000ms, height 1000ms, transform 1000ms;
+    transform: scale(0.70);
+
 }
 
-.foot>img:hover , .bask>img:hover , .skate>img:hover , .ath>img:hover {
+img:hover {
 
-    transform: scale(0.95);
+    transition: width 1000ms, height 1000ms, transform 1000ms;
+    transform: scale(0.90);
+
 }
+

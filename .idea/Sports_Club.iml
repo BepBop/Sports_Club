@@ -12,5 +12,9 @@
     <orderEntry type="library" name="full-page-scroll" level="application" />
     <orderEntry type="library" name="fullPage.js" level="application" />
     <orderEntry type="library" name="bootstrap" level="application" />
+    <orderEntry type="library" name="jquery-ui" level="application" />
+    <orderEntry type="library" name="jquery" level="application" />
+    <orderEntry type="library" name="@types/jquery" level="application" />
+    <orderEntry type="library" name="gsap" level="application" />
   </component>
 </module>

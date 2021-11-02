@@ -11,19 +11,19 @@ xyz.addEventListener('click', () => {
 
 
 let W = document.getElementById("pica");
-W.addEventListener("mouseover", () => {
+W.addEventListener("load", () => {
     OG.call(W, 1, 6)
 });
 let X = document.getElementById("picb");
-X.addEventListener("mouseover", () => {
+X.addEventListener("load", () => {
     OG.call(X, 6, 12)
 });
 let Y = document.getElementById("picc");
-Y.addEventListener("mouseover", () => {
+Y.addEventListener("load", () => {
     OG.call(Y, 13, 19)
 });
 let Z = document.getElementById("picd");
-Z.addEventListener("mouseover", () => {
+Z.addEventListener("load", () => {
     OG.call(Z, 20, 27)
 });
 
@@ -77,11 +77,11 @@ function OG(a, b) {
         }
 
         async function delay() {
-            let m = 0;
+            let m = a;
             while (++m <= b) {
                 if (flag) {
-                    await sleep(500);
                     context.src = images[m];
+                    await sleep(1000);
                     m = m === b ? a : m;
                 } else break;
             }
@@ -90,3 +90,4 @@ function OG(a, b) {
         delay();
     }
 }
+

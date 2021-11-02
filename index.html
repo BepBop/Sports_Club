@@ -9,7 +9,8 @@
 
     <link rel="stylesheet" type="text/css" href="main.css"/>
     <link rel="stylesheet" type="text/css" href="fullpage.css"/>
-    <script src="fullpage.js"></script>
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+
 
 </head>
 
@@ -48,21 +49,22 @@
     <div class="section ">
         <div id="main">
             <div class="skate">
-                <img src="P1.webp" id="pica" alt="skateboard">
+                <img src="P1.webp" id="pica" alt="skateboard"/>
+
                 <div class="a">Skateboarding.</div>
             </div>
             <div class="foot">
                 <div class="a">Football.</div>
-                <img src="P2.webp" id="picb" alt="Football"/>
+                <img src="P2.webp" id="picb" alt="Football" loading="lazy"/>
             </div>
 
             <div class="ath">
-                <img src="P3.webp" id="picc" alt="Athletics"/>
+                <img src="P3.webp" id="picc" alt="Athletics" loading="lazy"/>
                 <div class="a">Athletics.</div>
             </div>
             <div class="bask">
                 <div class="a">Basketball.</div>
-                <img src="P4.webp" id="picd" alt="Basketball"/>
+                <img src="P4.webp" id="picd" alt="Basketball" loading="lazy"/>
             </div>
 
         </div>
@@ -71,8 +73,10 @@
 </div>
 
 
+<script src="fullpage.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.0/gsap.min.js"></script>
 <script src="main.js"></script>
-
-
 </body>
 </html>
