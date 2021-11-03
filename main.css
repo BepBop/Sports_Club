@@ -69,11 +69,6 @@ nav a:hover {
     text-align: center;
 }
 
-.sec {
-/ / position: absolute;
-/ / background-color: #000e8d;
-}
-
 video {
 
     object-fit: cover;
@@ -137,31 +132,31 @@ button {
 
 
 .skate, .ath {
-
+    background-color: chartreuse;
     display: flex;
     min-width: 50vw;
-    //max-height: 100vh;
+    max-height: 100vh;
 }
 
 .foot, .bask {
-
+    background-color: purple;
     display: flex;
     justify-content: flex-end;
     min-width: 50vw;
-    //max-height: 100vh;
+    max-height: 100vh;
 }
 
-.foot img, .bask img, .skate img, .ath img {
+img {
 
-    transition: width 1000ms, height 1000ms, transform 1000ms;
+    //transition: width 1000ms, height 1000ms, transform 1000ms;
     transform: scale(0.70);
+    //width: 400px;
 
 }
 
 img:hover {
 
-    transition: width 1000ms, height 1000ms, transform 1000ms;
+    //transition: width 1000ms, height 1000ms, transform 1000ms;
     transform: scale(0.90);
 
 }
-

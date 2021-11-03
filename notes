@@ -193,3 +193,19 @@ function ab() {
     }
 
 }
+
+new fullpage('#fullpage', {
+    //options here
+    autoScrolling: true,
+    continuousVertical: true,
+});
+
+@media (prefers-reduced-motion: no-preference) {
+    #pica {
+        transition: opacity 1.5s ease, transform 1.5s ease;
+    }
+}
+#pica {
+    opacity: 1;
+    transform: scale(1);
+}
