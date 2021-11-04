@@ -209,3 +209,39 @@ new fullpage('#fullpage', {
     opacity: 1;
     transform: scale(1);
 }
+
+
+#slogan div:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #000e8d;
+    opacity: 0.5;
+}
+
+#slogan div:after {
+    animation: slogan 5s 1;
+}
+#slogan div {
+    animation: mongo 0.5s steps(1) 1;
+}
+@keyframes mongo {
+
+    0% {
+        color: transparent;
+    }
+     100% { color: #000e8d; }
+}
+@keyframes slogan {
+    0% {
+       transform: translate(0,0);
+
+    }
+    100% {
+        transform:translate(50%,0) ;
+
+    }
+}

@@ -81,7 +81,7 @@ function OG(a, b) {
             while (++m <= b) {
                 if (flag) {
                     context.src = images[m];
-                    await sleep(1000);
+                    await sleep(1500);
                     m = m === b ? a : m;
                 } else break;
             }

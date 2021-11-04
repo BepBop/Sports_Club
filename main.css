@@ -27,7 +27,9 @@
 
 #logo {
 
-    height: 100px;
+    top: 1vmin;
+    left: 1vmin;
+    width: 15vmin;
     position: absolute;
 
 }
@@ -40,7 +42,7 @@ nav {
 nav a {
     color: #000e8d;
     padding: 1% 1%;
-    font-size: 175%;
+    font-size: 150%;
     text-decoration: none;
     font-family: Gilroy-ExtraBold, sans-serif;
     transition-duration: 0.35s;
@@ -49,7 +51,6 @@ nav a {
 nav a:hover {
     background-color: #000e8d;
     color: white;
-
 }
 
 #slogan {
@@ -65,15 +66,67 @@ nav a:hover {
     font-family: Gilroy-Black, sans-serif;
     font-size: 600%;
     color: #000e8d;
+    //color: transparent;
     letter-spacing: 0.1vw;
-    text-align: center;
+    align-self: center;
+    position: relative;
 }
+
+#slogan div:after {
+    color: white;
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: transparent;
+}
+
+
+#slogan div:after {
+    animation: slogan 1.5s alternate 2;
+}
+
+@keyframes slogan {
+    0%,25%{
+        transform: scaleX(0);
+        transform-origin: left;
+    }
+
+    25% {
+        background: rgba(0, 14, 141, 0.95);
+        transform: scaleX(0);
+        transform-origin: left;
+
+    }
+
+    75%, 100% {
+        background: rgba(0, 14, 141, 0.99);
+        transform: scaleX(1);
+        transform-origin: left;
+    }
+
+
+}
+#slogan div {
+    animation: mongo steps(1, end) 1.5s ;
+}
+
+@keyframes mongo {
+
+    0% {
+        color: transparent;
+    }
+    100% { color: rgb(0, 14, 141); }
+}
+
 
 video {
 
     object-fit: cover;
     width: 100vw;
-    height: 100vh;
+    height: 99vh;
     position: absolute;
 
 }
@@ -146,17 +199,17 @@ button {
     max-height: 100vh;
 }
 
-img {
+#main img {
 
-    //transition: width 1000ms, height 1000ms, transform 1000ms;
+    transition: transform 1000ms;
     transform: scale(0.70);
-    //width: 400px;
+
 
 }
 
-img:hover {
+#main img:hover {
 
-    //transition: width 1000ms, height 1000ms, transform 1000ms;
+    transition: transform 1000ms;
     transform: scale(0.90);
 
 }
