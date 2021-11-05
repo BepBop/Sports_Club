@@ -90,3 +90,23 @@ function OG(a, b) {
         delay();
     }
 }
+
+let sections = document.querySelectorAll('.image');
+let options = {
+    rootMargin: '0px',
+    threshold: 0.25
+}
+let callback = (entries) => {
+    entries.forEach((entry) => {
+        let target = entry.target;
+        if (entry.intersectionRatio >= 0.25) {
+            target.classList.add("meow");
+        } else {
+            target.classList.remove("meow");
+        }
+    })
+}
+let observer = new IntersectionObserver(callback, options)
+sections.forEach((section,  index) => {
+    observer.observe(section)
+})

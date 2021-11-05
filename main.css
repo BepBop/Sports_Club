@@ -81,11 +81,12 @@ nav a:hover {
     right: 0;
     bottom: 0;
     background: transparent;
+
 }
 
 
 #slogan div:after {
-    animation: slogan 1.5s alternate 2;
+    animation: slogan 1.5s ease-in-out alternate 2;
 }
 
 @keyframes slogan {
@@ -185,14 +186,14 @@ button {
 
 
 .skate, .ath {
-    background-color: chartreuse;
+    //background-color: chartreuse;
     display: flex;
     min-width: 50vw;
     max-height: 100vh;
 }
 
 .foot, .bask {
-    background-color: purple;
+    //background-color: purple;
     display: flex;
     justify-content: flex-end;
     min-width: 50vw;
@@ -203,8 +204,6 @@ button {
 
     transition: transform 1000ms;
     transform: scale(0.70);
-
-
 }
 
 #main img:hover {
@@ -213,3 +212,18 @@ button {
     transform: scale(0.90);
 
 }
+
+@keyframes smoke {
+    0% {
+        opacity: 0.75;
+        transform: scale(0.90);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(0.70);
+    }
+}
+#main img.meow{
+   animation: smoke 1.5s ease-in-out 1;
+}
+
