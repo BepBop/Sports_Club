@@ -6,7 +6,7 @@ new fullpage('#fullpage', {
 
 let xyz = document.getElementById("main");
 xyz.addEventListener('click', () => {
-    xyz.scrollLeft = xyz.scrollLeft > 0 ? 0 : document.body.scrollWidth;
+    xyz.scrollLeft = xyz.scrollLeft >= document.body.scrollWidth ? 0 :  document.body.scrollWidth;
 })
 
 
@@ -107,6 +107,45 @@ let callback = (entries) => {
     })
 }
 let observer = new IntersectionObserver(callback, options)
-sections.forEach((section,  index) => {
+sections.forEach((section, index) => {
     observer.observe(section)
+})
+
+
+let sections2 = document.getElementById("blue");
+let sections3 = document.getElementById("one");
+let sections4 = document.getElementById("two");
+let sections5 = document.getElementById("three");
+let sections6 = document.getElementById("logo");
+sections2.addEventListener("click", () => {
+
+    sections2.classList.add("mmeow");
+    setTimeout(myfunction, 2000);
+
+    function myfunction() {
+        sections3.classList.add("cum");
+        sections4.classList.add("cum");
+        sections5.classList.add("cum");
+
+    }
+
+    setTimeout(myfunction2, 2000);
+
+    function myfunction2() {
+        sections3.classList.add("cumm");
+        sections4.classList.add("cumm");
+        sections5.classList.add("cumm");
+    }
+
+    sections6.classList.add("cum");
+
+    setTimeout(myfunction3, 5000);
+
+    function myfunction3() {
+        sections2.classList.remove("mmeow");
+        sections2.classList.add("next");
+
+        sections6.classList.remove("cum");
+        sections6.classList.add("next");
+    }
 })

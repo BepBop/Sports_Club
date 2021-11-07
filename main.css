@@ -25,14 +25,85 @@
     src: url("Gilroy-Heavy.ttf");
 }
 
+#blue {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: darkblue;
+
+}
+
+#blue.next {
+    width: 0;
+    height: 0;
+    background-color: transparent;
+
+}
+
+#blue.mmeow {
+    animation: ass 2s ease-in-out 1;
+    background-color: transparent;
+    }
+
+@keyframes ass {
+    0% {
+        background-color: darkblue;
+    }
+
+    80% {
+        background-color: darkblue;
+    }
+
+    100% {
+        background-color: transparent;
+    }
+
+}
+
+
 #logo {
 
+    position: absolute;
+    width: 25vmin;
+    top: 38.5%;
+    left: 44.5%;
+
+}
+
+#logo.cum {
+    position: absolute;
     top: 1vmin;
     left: 1vmin;
     width: 15vmin;
-    position: absolute;
-
+    animation: sex 2.5s ease-in-out 1;
 }
+
+#logo.next {
+    position: absolute;
+    top: 1vmin;
+    left: 1vmin;
+    width: 15vmin;
+}
+
+
+
+@keyframes sex {
+
+    0%  {
+        position: absolute;
+        width: 25vmin;
+        top: 38.5%;
+        left: 44.5%;
+    }
+    100% {
+        position: absolute;
+        top: 1vmin;
+        left: 1vmin;
+        width: 15vmin;
+    }
+}
+
+
 
 nav {
     display: flex;
@@ -61,41 +132,47 @@ nav a:hover {
     overflow: hidden;
 }
 
-#slogan div {
+#one, #two, #three {
+    font-size: 0;
+
+}
+
+#one.cumm, #two.cumm, #three.cumm {
 
     font-family: Gilroy-Black, sans-serif;
     font-size: 600%;
     color: #000e8d;
-    //color: transparent;
     letter-spacing: 0.1vw;
     align-self: center;
     position: relative;
+    animation: mongo steps(1, end) 1.5s ;
 }
 
-#slogan div:after {
-    color: white;
-    content: "";
+
+#one.cum:after, #two.cum:after, #three.cum:after {
+
     position: absolute;
+    content: "";
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
-    background: transparent;
+    animation: slogan 1.25s ease-in-out alternate 2;
+    opacity: 1;
 
-}
 
-
-#slogan div:after {
-    animation: slogan 1.5s ease-in-out alternate 2;
 }
 
 @keyframes slogan {
     0%,25%{
+
+
         transform: scaleX(0);
         transform-origin: left;
     }
 
     25% {
+
         background: rgba(0, 14, 141, 0.95);
         transform: scaleX(0);
         transform-origin: left;
@@ -103,15 +180,14 @@ nav a:hover {
     }
 
     75%, 100% {
+
+
         background: rgba(0, 14, 141, 0.99);
         transform: scaleX(1);
         transform-origin: left;
     }
 
 
-}
-#slogan div {
-    animation: mongo steps(1, jump-both) 1.5s ;
 }
 
 @keyframes mongo {
@@ -165,23 +241,17 @@ button {
     color: #000e8d;
 }
 
-.skate img, .ath img {
-
-    padding: 0 1vw 0 5vw;
-}
 
 .skate .a, .ath .a {
 
-    padding-top: 15%;
+    padding-top: 20%;
+
 }
 
-.foot img, .bask img {
 
-    padding: 0 5vw 0 1vw;
-}
 
 .foot .a, .bask .a {
-    padding-top: 75%;
+    padding-top: 70%;
 }
 
 
@@ -190,7 +260,9 @@ button {
     display: flex;
     min-width: 50vw;
     max-height: 100vh;
+    //overflow: hidden;
 }
+
 
 .foot, .bask {
     //background-color: purple;
@@ -198,6 +270,50 @@ button {
     justify-content: flex-end;
     min-width: 50vw;
     max-height: 100vh;
+    overflow: hidden;
+}
+
+@media (max-width: 1000px)
+{
+
+    .skate img, .ath img {
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+        //padding: 0 -100% 0 0;
+
+    }
+
+    .foot img, .bask img {
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+
+        //padding: 0 -100% 0 0;
+    }
+
+    .skate .a, .ath .a {
+       font-size: 0;
+    }
+
+
+    .foot .a, .bask .a {
+        font-size: 0;
+    }
+}
+
+@keyframes smoke {
+    0% {
+        opacity: 0.75;
+        transform: scale(0.90);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(0.70);
+    }
+}
+    #main img.meow{
+   animation: smoke ease-out 1;
 }
 
 #main img {
@@ -213,17 +329,19 @@ button {
 
 }
 
-@keyframes smoke {
-    0% {
-        opacity: 0.75;
-        transform: scale(0.90);
-    }
-    100% {
-        opacity: 1;
-        transform: scale(0.70);
-    }
-}
-#main img.meow{
-   animation: smoke ease-out 1;
+.footer img{
+    margin-top: 60vh;
+    width:15vmax ;
+    margin-left: 80vw;
+    position: absolute;
 }
 
+.dot {
+    height:250px;
+    width:250px;
+    background-color: #1100ff;
+    border-radius: 50%;
+    margin-top: 55vh;
+    position: absolute;
+    margin-left: 77vw;
+}
