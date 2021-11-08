@@ -101,6 +101,7 @@ let callback = (entries) => {
         let target = entry.target;
         if (entry.intersectionRatio >= 0.25) {
             target.classList.add("meow");
+            console.log(target);
         } else {
             target.classList.remove("meow");
         }
