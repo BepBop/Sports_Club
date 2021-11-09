@@ -55,7 +55,7 @@ button
 
   height: 42px;
   color: white;
-  background-color: rgba(0, 0, 0, 0) ;
+  background-color: rgba(0, 0, 0, 0);
   font-size: 150%;
   border-style:solid;
   margin-left:1%;
@@ -67,8 +67,8 @@ button
 button:hover
 {
 
-  background-color: rgb(255, 255, 255) ;
-  color:rgb(5, 24, 200);
+  background-color: rgb(255, 255, 255);
+  color: rgb(5, 24, 200);
   cursor: pointer;
 }
 

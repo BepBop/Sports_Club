@@ -5,17 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contacts</title>
     <link rel=stylesheet href="Contact.css">
+    <link rel="stylesheet" href="jquery-waves.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+    <script src="jquery-waves.min.js"></script>
 </head>
 
 
 <body>
 <div class="hero">
-    <div class="sign">Sign up to the club <span style='font-size:100px;'>&#128512;</span></div>
+    <div class="sign">Sign up to the club! &#128512</div>
     <div class="sign2">Coming this summer.</div>
     <div class="form">
-        <label for="emailinput"></label><input id="emailinput" placeholder="Email" type="text"
+        <label for="emailinput"></label><input id="emailinput" placeholder="Email" type="text" autofocus x-webkit-speech
                                                onblur="validateEmail(this);"/>
-        <button type="button">I'm Interested</button>
+        <button type="button" data-waves data-waves-duration="800" data-waves-hide-duration="1000" data-waves-background-color="rgb(5, 24, 200)" data-waves-opacity="0.5">I'm Interested</button>
     </div>
 
 </div>

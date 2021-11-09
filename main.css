@@ -43,7 +43,7 @@
 #blue.mmeow {
     animation: ass 2s ease-in-out 1;
     background-color: transparent;
-    }
+}
 
 @keyframes ass {
     0% {
@@ -88,10 +88,9 @@
 }
 
 
-
 @keyframes sex {
 
-    0%  {
+    0% {
         position: absolute;
         width: 30vmin;
         top: 38%;
@@ -104,7 +103,6 @@
         width: 15vmin;
     }
 }
-
 
 
 nav {
@@ -147,7 +145,7 @@ nav a:hover {
     letter-spacing: 0.1vw;
     align-self: center;
     position: relative;
-    animation: mongo steps(1, end) 1.5s ;
+    animation: mongo steps(1, end) 1.5s;
 }
 
 
@@ -166,7 +164,7 @@ nav a:hover {
 }
 
 @keyframes slogan {
-    0%,25%{
+    0% {
 
 
         transform: scaleX(0);
@@ -197,7 +195,9 @@ nav a:hover {
     0% {
         color: transparent;
     }
-    100% { color: rgb(0, 14, 141); }
+    100% {
+        color: rgb(0, 14, 141);
+    }
 }
 
 
@@ -251,23 +251,22 @@ button {
 }
 
 
-
 .foot .a, .bask .a {
     padding-top: 70%;
 }
 
 
 .skate, .ath {
-    //background-color: chartreuse;
+
     display: flex;
     min-width: 50vw;
     max-height: 100vh;
-    //overflow: hidden;
+
 }
 
 
 .foot, .bask {
-    //background-color: purple;
+
     display: flex;
     justify-content: flex-end;
     min-width: 50vw;
@@ -275,14 +274,12 @@ button {
     overflow: hidden;
 }
 
-@media (max-width: 1000px)
-{
+@media (max-width: 1000px) {
 
     .skate img, .ath img {
         object-fit: cover;
         width: 100%;
         height: 100%;
-        //padding: 0 -100% 0 0;
 
     }
 
@@ -290,11 +287,10 @@ button {
         object-fit: cover;
         width: 100%;
         height: 100%;
-        //padding: 0 -100% 0 0;
     }
 
     .skate .a, .ath .a {
-       font-size: 0;
+        font-size: 0;
     }
 
 
@@ -313,8 +309,9 @@ button {
         transform: scale(0.70);
     }
 }
-    .image.meow{
-   animation: smoke linear 1s;
+
+.image.meow {
+    animation: smoke linear 1s;
 }
 
 .image {
@@ -330,16 +327,16 @@ button {
 
 }
 
-.footer img{
+.footer img {
     margin-top: 60vh;
-    width:15vmax ;
+    width: 15vmax;
     margin-left: 80vw;
     position: absolute;
 }
 
 .dot {
-    height:250px;
-    width:250px;
+    height: 250px;
+    width: 250px;
     background-color: #1100ff;
     border-radius: 50%;
     margin-top: 55vh;
