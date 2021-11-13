@@ -245,3 +245,13 @@ new fullpage('#fullpage', {
 
     }
 }
+
+.dot {
+    height: 250px;
+    width: 250px;
+    background-color: #1100ff;
+    border-radius: 50%;
+    margin-top: 55vh;
+    position: absolute;
+    margin-left: 77vw;
+}

@@ -81,7 +81,7 @@ function OG(a, b) {
             while (++m <= b) {
                 if (flag) {
                     context.src = images[m];
-                    await sleep(1500);
+                    await sleep(500);
                     m = m === b ? a : m;
                 } else break;
             }
@@ -92,15 +92,17 @@ function OG(a, b) {
 }
 
 let sections = document.querySelectorAll('.image');
+let mmm = document.querySelectorAll('.a');
 let options = {
     rootMargin: '0px',
-    threshold: 0.25
+    threshold: 0.2
 }
 let callback = (entries) => {
     entries.forEach((entry) => {
         let target = entry.target;
-        if (entry.intersectionRatio >= 0.25) {
+        if (entry.intersectionRatio >= 0.1) {
             target.classList.add("meow");
+            target.classList.add("o");
             console.log(target);
         } else {
             target.classList.remove("meow");
@@ -114,39 +116,58 @@ sections.forEach((section, index) => {
 
 
 let sections2 = document.getElementById("blue");
+
 let sections3 = document.getElementById("one");
 let sections4 = document.getElementById("two");
 let sections5 = document.getElementById("three");
+
 let sections6 = document.getElementById("logo");
+
 sections2.addEventListener("click", () => {
 
-    sections2.classList.add("mmeow");
+    sections2.classList.add("color_drop");
+
     setTimeout(myfunction, 2000);
 
     function myfunction() {
-        sections3.classList.add("cum");
-        sections4.classList.add("cum");
-        sections5.classList.add("cum");
+        sections3.classList.add("blue_strip");
+        sections4.classList.add("blue_strip");
+        sections5.classList.add("blue_strip");
 
     }
 
     setTimeout(myfunction2, 2000);
 
     function myfunction2() {
-        sections3.classList.add("cumm");
-        sections4.classList.add("cumm");
-        sections5.classList.add("cumm");
+        sections3.classList.add("faint_color");
+        sections4.classList.add("faint_color");
+        sections5.classList.add("faint_color");
     }
 
-    sections6.classList.add("cum");
+    sections6.classList.add("move_diagonal");
 
     setTimeout(myfunction3, 5000);
 
     function myfunction3() {
-        sections2.classList.remove("mmeow");
+
+        sections2.classList.remove("color_drop");
         sections2.classList.add("next");
 
-        sections6.classList.remove("cum");
+        sections3.classList.remove("blue_strip");
+        sections4.classList.remove("blue_strip");
+        sections5.classList.remove("blue_strip");
+
+        sections3.classList.remove("faint_color");
+        sections4.classList.remove("faint_color");
+        sections5.classList.remove("faint_color");
+
+        sections3.classList.add("og");
+        sections4.classList.add("og");
+        sections5.classList.add("og");
+
+        sections6.classList.remove("move_diagonal");
         sections6.classList.add("next");
+
+
     }
 })

@@ -40,12 +40,12 @@
 
 }
 
-#blue.mmeow {
-    animation: ass 2s ease-in-out 1;
+#blue.color_drop {
+    animation: animation1 2s ease-in-out 1;
     background-color: transparent;
 }
 
-@keyframes ass {
+@keyframes animation1 {
     0% {
         background-color: darkblue;
     }
@@ -70,13 +70,13 @@
 
 }
 
-#logo.cum {
+#logo.move_diagonal {
     object-fit: cover;
     position: absolute;
     top: 1vmin;
     left: 1vmin;
     width: 15vmin;
-    animation: sex 2.5s ease-in-out 1;
+    animation: sex 2.25s ease-in-out 1;
 }
 
 #logo.next {
@@ -137,7 +137,8 @@ nav a:hover {
 
 }
 
-#one.cumm, #two.cumm, #three.cumm {
+
+#one.faint_color, #two.faint_color, #three.faint_color {
 
     font-family: Gilroy-Black, sans-serif;
     font-size: 600%;
@@ -149,7 +150,7 @@ nav a:hover {
 }
 
 
-#one.cum:after, #two.cum:after, #three.cum:after {
+#one.blue_strip:after, #two.blue_strip:after, #three.blue_strip:after {
 
     position: absolute;
     content: "";
@@ -161,6 +162,15 @@ nav a:hover {
     opacity: 1;
 
 
+}
+#one.og, #two.og, #three.og {
+
+    font-family: Gilroy-Black, sans-serif;
+    font-size: 600%;
+    color: #000e8d;
+    letter-spacing: 0.1vw;
+    align-self: center;
+    position: relative;
 }
 
 @keyframes slogan {
@@ -238,21 +248,8 @@ button {
     height: 100%;
     overflow-x: hidden;
     display: flex;
-    font-size: 2.5vw;
+    font-size: 3vw;
     font-family: Gilroy-Bold, sans-serif;
-    color: #000e8d;
-}
-
-
-.skate .a, .ath .a {
-
-    padding-top: 20%;
-
-}
-
-
-.foot .a, .bask .a {
-    padding-top: 70%;
 }
 
 
@@ -264,7 +261,6 @@ button {
 
 }
 
-
 .foot, .bask {
 
     display: flex;
@@ -274,7 +270,18 @@ button {
     overflow: hidden;
 }
 
-@media (max-width: 1000px) {
+.skate .animated_text, .ath .animated_text {
+    padding-top: 20%;
+
+}
+
+.foot .animated_text, .bask .animated_text {
+    padding-top: 65%;
+}
+
+
+
+@media (max-width: 1100px) {
 
     .skate img, .ath img {
         object-fit: cover;
@@ -289,43 +296,50 @@ button {
         height: 100%;
     }
 
-    .skate .a, .ath .a {
+    .skate .animated_text, .ath .animated_text {
         font-size: 0;
     }
 
 
-    .foot .a, .bask .a {
+    .foot .animated_text, .bask .animated_text {
         font-size: 0;
     }
-}
-
-@keyframes smoke {
-    0% {
-        opacity: 0;
-        transform: scale(0.80);
-    }
-    100% {
-        opacity: 1;
-        transform: scale(0.70);
-    }
-}
-
-.image.meow {
-    animation: smoke linear 1s;
 }
 
 .image {
-
-    transition: transform 1000ms;
-    transform: scale(0.70);
+    opacity: 0;
 }
 
-.image:hover {
+.image.o:hover {
 
     transition: transform 1000ms;
     transform: scale(0.90);
 
 }
+
+.image.o {
+    transition: transform 1000ms;
+    transform: scale(0.75);
+    opacity: 1;
+
+}
+
+.image.meow {
+    animation: smoke ease 800ms;
+
+}
+
+@keyframes smoke {
+    0% {
+        opacity: 0;
+        transform: scale(0.90);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(0.75);
+    }
+}
+
 
 .footer img {
     margin-top: 60vh;
@@ -334,12 +348,6 @@ button {
     position: absolute;
 }
 
-.dot {
-    height: 250px;
-    width: 250px;
-    background-color: #1100ff;
-    border-radius: 50%;
-    margin-top: 55vh;
-    position: absolute;
-    margin-left: 77vw;
+body {
+    cursor: url("cur.png"), auto;
 }
