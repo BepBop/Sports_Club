@@ -1,74 +1,92 @@
 html, body {
-  overflow: hidden;
+    overflow: hidden;
 }
 
 .hero {
-    background:rgb(5, 24, 200);
-    transform:  skewY(4deg);
+    background: darkblue;
+    transform: skewY(4deg);
     transform-origin: 100%;
-    margin-top: 7%;
-
-
+    margin-top: 7%
 }
 
-.sign
-{
-  font-size: 450%;
-  color: aliceblue;
-  font-family: sans-serif;
-  transform: skewY(-4deg);
+.sign {
+    font-size: 450%;
+    color: white;
+    font-family: sans-serif;
+    transform: skewY(-4deg);
     padding: 15% 25% 1.5%;
     font-weight: bolder;
 }
 
-.sign2
-{  font-size: 125%;
-  color: aliceblue;
-  font-family: sans-serif;
-  transform: skewY(-4deg);
-  padding-bottom: 5%;
-  padding-right: 25%;
-  padding-left: 25%;
-}
-.form
-{
-  font-family: sans-serif;
-  transform: skewY(-4deg);
-  padding-right: 25%;
-  padding-left: 25%;
-  padding-bottom: 25%;
-  width: 1000px;
-  height: 100px;
+.sign2 {
+    font-size: 125%;
+    color: aliceblue;
+    font-family: sans-serif;
+    transform: skewY(-4deg);
+    padding-bottom: 5%;
+    padding-right: 25%;
+    padding-left: 25%;
 }
 
-#emailinput {
+.form {
+    font-family: sans-serif;
+    transform: skewY(-4deg);
+    padding-right: 25%;
+    padding-left: 25%;
+    padding-bottom: 25%;
+    width: 1000px;
+    height: 100px;
+}
+
+.emailinput {
 
     height: 40px;
     width: 400px;
     font-size: 150%;
+    border-color: white;
+    transition: 1s;
+    outline: none;
+}
+
+.emailinput.on:valid {
+    border: 2px solid rgba(10, 255, 10, 0.85);
+    background-color: rgb(200, 255, 200);
+
 
 }
 
-
-button
-{
-
-  height: 42px;
-  color: white;
-  background-color: rgba(0, 0, 0, 0);
-  font-size: 150%;
-  border-style:solid;
-  margin-left:1%;
+.emailinput.on:invalid {
+    border: 2px solid rgba(255, 10, 10, 0.85);
+    background-color: rgb(252, 200, 200);
 }
 
-::-webkit-input-placeholder { padding:5px;
+
+#submitBtn {
+
+    height: 42px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0);
+    border-style: solid;
+    font-size: 150%;
+    margin-left: 2%;
 }
 
-button:hover
-{
+#submitBtn.on {
 
-  background-color: rgb(255, 255, 255);
-  color: rgb(5, 24, 200);
-  cursor: pointer;
+    transition: 0.5s;
+    border-color: rgba(255, 255, 255, 0.75);
+    border-style: solid;
+
+}
+
+::-webkit-input-placeholder {
+    padding: 1%;
+}
+
+#submitBtn.on:hover {
+
+    background-color: rgb(255, 255, 255);
+    color: rgb(5, 24, 200);
+    cursor: pointer;
 }
 

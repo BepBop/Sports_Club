@@ -92,7 +92,6 @@ function OG(a, b) {
 }
 
 let sections = document.querySelectorAll('.image');
-let mmm = document.querySelectorAll('.a');
 let options = {
     rootMargin: '0px',
     threshold: 0.2
