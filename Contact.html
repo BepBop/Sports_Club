@@ -6,9 +6,7 @@
     <title>Contacts</title>
     <link rel=stylesheet href="Contact.css">
     <link rel="stylesheet" href="jquery-waves.min.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
-    <script src="jquery-waves.min.js"></script>
+
 </head>
 
 
@@ -20,13 +18,19 @@
         <label>
             <input type="email" class="emailinput" placeholder="Email" size="320" required>
         </label>
-        <button type="button" id='submitBtn' disabled="disabled" onclick="validateEmail(this)">
+        <button type="button" id='submitBtn' disabled="disabled" data-waves data-waves-background-color="rgba(0, 0, 200, 0.35)"  data-waves-duration="400" data-waves-hide-duration="600" onclick="validateEmail(this)">
             I'm Interested
         </button>
 
     </div>
 
 </div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+
+<script src="jquery-waves.min.js"></script>
 
 <script>
     $(function () {
