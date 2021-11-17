@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@800&display=swap');
+
 @font-face {
     font-family: Gilroy-Black;
     src: url("Gilroy-Black.ttf");
@@ -30,6 +32,7 @@
     width: 100%;
     height: 100%;
     background-color: darkblue;
+    cursor: none;
 
 }
 
@@ -41,7 +44,7 @@
 }
 
 #blue.color_drop {
-    animation: animation1 2s ease-in-out 1;
+    animation: animation1 2s ease-out 1;
     background-color: transparent;
 }
 
@@ -50,7 +53,7 @@
         background-color: darkblue;
     }
 
-    80% {
+    75% {
         background-color: darkblue;
     }
 
@@ -76,7 +79,7 @@
     top: 1vmin;
     left: 1vmin;
     width: 15vmin;
-    animation: sex 2.25s ease-in-out 1;
+    animation: dig 2s ease-in-out 1;
 }
 
 #logo.next {
@@ -88,7 +91,7 @@
 }
 
 
-@keyframes sex {
+@keyframes dig {
 
     0% {
         position: absolute;
@@ -122,6 +125,7 @@ nav a {
 nav a:hover {
     background-color: #000e8d;
     color: white;
+
 }
 
 #slogan {
@@ -134,7 +138,6 @@ nav a:hover {
 
 #one, #two, #three {
     font-size: 0;
-
 }
 
 
@@ -146,7 +149,8 @@ nav a:hover {
     letter-spacing: 0.1vw;
     align-self: center;
     position: relative;
-    animation: mongo steps(1, end) 1.5s;
+    animation: mongo steps(1, end) 1.7s;
+
 }
 
 
@@ -158,8 +162,9 @@ nav a:hover {
     left: 0;
     right: 0;
     bottom: 0;
-    animation: slogan 1.25s ease-in-out alternate 2;
+    animation: slogan 1.35s ease-in-out alternate 2;
     opacity: 1;
+    cursor: none;
 
 
 }
@@ -173,33 +178,6 @@ nav a:hover {
     position: relative;
 }
 
-@keyframes slogan {
-    0% {
-
-
-        transform: scaleX(0);
-        transform-origin: left;
-    }
-
-    25% {
-
-        background: rgba(0, 14, 141, 0.95);
-        transform: scaleX(0);
-        transform-origin: left;
-
-    }
-
-    75%, 100% {
-
-
-        background: rgba(0, 14, 141, 0.99);
-        transform: scaleX(1);
-        transform-origin: left;
-    }
-
-
-}
-
 @keyframes mongo {
 
     0% {
@@ -210,6 +188,32 @@ nav a:hover {
     }
 }
 
+@keyframes slogan {
+    0% {
+
+
+        transform: scaleX(0);
+        transform-origin: left;
+    }
+
+    25% {
+
+        background: rgba(0, 14, 141);
+        transform: scaleX(0);
+        transform-origin: left;
+
+    }
+
+    75%, 100% {
+
+
+        background: rgba(0, 14, 141);
+        transform: scaleX(1);
+        transform-origin: left;
+    }
+
+
+}
 
 video {
 
@@ -234,7 +238,7 @@ video {
 
 button {
     margin: auto;
-    font-family: Helvetica, sans-serif;
+    font-family: 'Inter', sans-serif;
     font-weight: bold;
     background-color: rgba(1, 1, 1, 0.2);
     color: rgb(255, 255, 255);
@@ -258,7 +262,6 @@ button {
     display: flex;
     min-width: 50vw;
     max-height: 100vh;
-
 }
 
 .foot, .bask {
@@ -314,6 +317,7 @@ button {
 
     transition: transform 1000ms;
     transform: scale(0.90);
+    cursor: none;
 
 }
 
@@ -325,7 +329,7 @@ button {
 }
 
 .image.meow {
-    animation: smoke ease 800ms;
+    animation: smoke ease-in 1000ms;
 
 }
 
@@ -349,5 +353,7 @@ button {
 }
 
 body {
-    cursor: url("cur.png"), auto;
+
+    cursor:  url("cur.png") 0 0, auto;
+    background-color: rgb(253, 253, 255);
 }

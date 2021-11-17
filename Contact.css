@@ -1,16 +1,20 @@
-html, body {
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@800&display=swap');
+
+body{
+    font-family: 'Inter', sans-serif;
     //overflow: hidden;
-    font-family: Helvetica, sans-serif;
     //margin-top: 5vh;
     margin-top: 1vh;
     overflow: hidden;
+    cursor: default;
 }
 
 .hero {
     background-color: #000e8d;
     transform: skewY(4deg);
-    transform-origin: 0%;
+    transform-origin: 0;
     padding: 10% 25% 100% 25%;
+
 }
 
 .sign {
@@ -86,6 +90,5 @@ html, body {
 
     background-color: rgb(255, 255, 255);
     color: rgb(5, 24, 200);
-    cursor: pointer;
 }
 
