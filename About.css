@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@800&display=swap');
 
-body{
+body {
     font-family: 'Inter', sans-serif;
     background-color: rgb(253, 253, 255);
     cursor: default;
@@ -11,9 +11,8 @@ body{
     height: 100%;
     background-image: url("cool-background2.png");
     background-size: cover;
-    //background-repeat: no-repeat;
-    //background-position: 50 % 50 %;
-
+/*    background-repeat: no-repeat;
+    background-position: 50% 50%;*/
 }
 
 .about {
@@ -26,10 +25,12 @@ body{
 }
 
 .essay {
-    font-size: 250%;
-    padding: 5% 25%;
-    color: darkblue;
-    //font-weight: 550;
+    margin-left: 1%;
+     font-size: 250%;
+     padding: 5% 25%;
+     color: darkblue;
+   /* font-weight: 550;*/
+
 }
 
 @media screen and (max-width: 1000px) {

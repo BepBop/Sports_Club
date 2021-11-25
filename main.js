@@ -2,6 +2,7 @@ new fullpage('#fullpage', {
     //options here
     autoScrolling: true,
     continuousVertical: true,
+    scrollingSpeed: 600,
 });
 
 let xyz = document.getElementById("main");
@@ -16,7 +17,7 @@ W.addEventListener("load", () => {
 });
 let X = document.getElementById("picb");
 X.addEventListener("load", () => {
-    OG.call(X, 6, 12)
+    OG.call(X, 7, 12)
 });
 let Y = document.getElementById("picc");
 Y.addEventListener("load", () => {
@@ -64,6 +65,7 @@ function OG(a, b) {
         flag = true;
         ab.call(this);
     });
+
     this.addEventListener("mouseout", () => {
         flag = false;
     });
@@ -102,14 +104,13 @@ let callback = (entries) => {
         if (entry.intersectionRatio >= 0.1) {
             target.classList.add("meow");
             target.classList.add("o");
-            console.log(target);
         } else {
             target.classList.remove("meow");
         }
     })
 }
 let observer = new IntersectionObserver(callback, options)
-sections.forEach((section, index) => {
+sections.forEach((section,) => {
     observer.observe(section)
 })
 
@@ -169,4 +170,28 @@ sections2.addEventListener("click", () => {
 
 
     }
+})
+
+
+let roundLogEl = document.querySelector('.dot');
+
+let callback2 = (entries) => {
+    entries.forEach((entry) => {
+        if (entry.intersectionRatio >= 0.1) {
+
+            anime({
+                targets: roundLogEl,
+                innerHTML: [0, 50],
+                easing: 'easeInOutQuad',
+                round: 1,
+                duration: 2800,
+            });
+
+        }
+    })
+}
+
+let observer2 = new IntersectionObserver(callback2, options)
+sections.forEach((roundLogEl,) => {
+    observer2.observe(roundLogEl)
 })

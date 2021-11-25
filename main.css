@@ -40,7 +40,6 @@
     width: 0;
     height: 0;
     background-color: transparent;
-
 }
 
 #blue.color_drop {
@@ -125,15 +124,13 @@ nav a {
 nav a:hover {
     background-color: #000e8d;
     color: white;
-
 }
 
 #slogan {
-
+    padding-top: 25vh;
     display: flex;
     flex-direction: column;
-    padding-top: 25vh;
-    overflow: hidden;
+    align-items: center;
 }
 
 #one, #two, #three {
@@ -142,20 +139,16 @@ nav a:hover {
 
 
 #one.faint_color, #two.faint_color, #three.faint_color {
-
     font-family: Gilroy-Black, sans-serif;
     font-size: 600%;
     color: #000e8d;
     letter-spacing: 0.1vw;
-    align-self: center;
     position: relative;
     animation: mongo steps(1, end) 1.7s;
-
+    cursor: none;
 }
 
-
 #one.blue_strip:after, #two.blue_strip:after, #three.blue_strip:after {
-
     position: absolute;
     content: "";
     top: 0;
@@ -165,16 +158,13 @@ nav a:hover {
     animation: slogan 1.35s ease-in-out alternate 2;
     opacity: 1;
     cursor: none;
-
-
 }
-#one.og, #two.og, #three.og {
 
+#one.og, #two.og, #three.og {
     font-family: Gilroy-Black, sans-serif;
     font-size: 600%;
     color: #000e8d;
     letter-spacing: 0.1vw;
-    align-self: center;
     position: relative;
 }
 
@@ -184,7 +174,7 @@ nav a:hover {
         color: transparent;
     }
     100% {
-        color: rgb(0, 14, 141);
+        color: #000e8d;
     }
 }
 
@@ -219,7 +209,7 @@ video {
 
     object-fit: cover;
     width: 100vw;
-    height: 99vh;
+    height: 100vh;
     position: absolute;
 
 }
@@ -238,7 +228,7 @@ video {
 
 button {
     margin: auto;
-    font-family: 'Inter', sans-serif;
+    font-family: Roboto, sans-serif;
     font-weight: bold;
     background-color: rgba(1, 1, 1, 0.2);
     color: rgb(255, 255, 255);
@@ -256,9 +246,7 @@ button {
     font-family: Gilroy-Bold, sans-serif;
 }
 
-
 .skate, .ath {
-
     display: flex;
     min-width: 50vw;
     max-height: 100vh;
@@ -281,7 +269,6 @@ button {
 .foot .animated_text, .bask .animated_text {
     padding-top: 65%;
 }
-
 
 
 @media (max-width: 1100px) {
@@ -329,7 +316,7 @@ button {
 }
 
 .image.meow {
-    animation: smoke ease-in 1000ms;
+    animation: smoke ease-out 1000ms;
 
 }
 
@@ -345,15 +332,38 @@ button {
 }
 
 
-.footer img {
-    margin-top: 60vh;
-    width: 15vmax;
-    margin-left: 80vw;
-    position: absolute;
+.slide1 {
+    display: flex;
+    padding: 2.5% 5%;
+    justify-content: space-between;
+    font-family: "Roboto Thin", sans-serif;
+    color: #000e8d;
+    font-size: 1000%;
+    background-color: rgba(0, 0, 0, 0.94);
 }
+
+.footer {
+    display: flex;
+    padding: 2.5% 5%;
+    justify-content: space-around;
+    font-family: "Roboto Thin", sans-serif;
+    color: #000e8d;
+    font-size: 1000%;
+    background-color: rgba(0, 0, 0, 0.94);
+
+}
+
+.footer-image {
+    display: flex;
+    justify-content: flex-end;
+    background-color: rgba(0, 0, 0, 0.94);
+    padding: 2.5% 1% 1.5% 5%;
+
+}
+
 
 body {
 
-    cursor:  url("cur.png") 0 0, auto;
+    cursor: url("cur.png") 0 0, auto;
     background-color: rgb(253, 253, 255);
 }

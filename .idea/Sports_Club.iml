@@ -17,5 +17,6 @@
     <orderEntry type="library" name="@types/jquery" level="application" />
     <orderEntry type="library" name="gsap" level="application" />
     <orderEntry type="library" name="animejs" level="application" />
+    <orderEntry type="library" name="sweetalert2" level="application" />
   </component>
 </module>

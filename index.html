@@ -15,14 +15,11 @@
     <link rel="stylesheet" href="jquery-waves.min.css">
 
     <script src="fullpage.js"></script>
-
-
 </head>
-
 <body>
 <div id="fullpage">
 
-    <div class="section ">
+    <div class="section" data-anchor="1">
         <span id="blue"></span>
         <img id="logo" src="Logo.svg" alt="error"/>
 
@@ -39,19 +36,22 @@
         </div>
     </div>
 
-    <div class="section ">
+    <div class="section" data-anchor="2">
         <video data-autoplay muted data-keepplaying loop>
             <source src="Untitled.m4v">
         </video>
         <div id="btn">
             <button data-waves data-waves-duration="800" data-waves-hide-duration="1000"
-                    data-waves-background-color="white" data-waves-opacity="0.2">START TRAINING NOW
+                    data-waves-background-color="white" data-waves-opacity="0.2"
+                    onclick="location.href='Price.html#2';">START TRAINING NOW
             </button>
         </div>
     </div>
 
-    <div class="section ">
+    <div class="section" data-anchor="3">
+
         <div id="main">
+
             <div class="skate">
                 <img src="P1.webp" id="pica" class="image" alt="skateboard"/>
                 <div class="animated_text">
@@ -62,15 +62,15 @@
                     <div class="text" data-text="Skateboarding">Skateboarding</div>
                 </div>
             </div>
+
             <div class="foot">
                 <div class="animated_text">
                     <a href="Price.html"></a>
                     <a href="Price.html"></a>
                     <a href="Price.html"></a>
                     <a href="Price.html"></a>
-                    <div  class="text" data-text="Football">Football</div>
+                    <div class="text" data-text="Football">Football</div>
                 </div>
-
                 <img src="P2.webp" id="picb" class="image" alt="Football"/>
             </div>
 
@@ -82,34 +82,51 @@
                     <a href="Price.html"></a>
                     <a href="Price.html"></a>
                     <a href="Price.html"></a>
-                    <div  class="text" data-text="Athletics">Athletics</div>
+                    <div class="text" data-text="Athletics">Athletics</div>
                 </div>
+
             </div>
+
             <div class="bask">
                 <div class="animated_text">
                     <a href="Price.html"></a>
                     <a href="Price.html"></a>
                     <a href="Price.html"></a>
                     <a href="Price.html"></a>
-                    <div  class="text" data-text="Basketball">Basketball</div>
+                    <div class="text" data-text="Basketball">Basketball</div>
                 </div>
                 <img src="P4.webp" id="picd" class="image" alt="Basketball"/>
             </div>
-        </div>
-    </div>
-    <div class="section">
-        <div class="footer">
-            <div class="dot"></div>
-            <img src="Logo.svg" alt="error"/>
+
         </div>
 
     </div>
+
+    <div class="section" data-anchor="4">
+
+        <div class="slide1">
+            <div class="dot"></div>
+            Thousand+
+        </div>
+
+        <div class="footer">
+            Success Stories!
+        </div>
+
+        <div class="footer-image">
+            <img src="Logo2.svg" style="width: 100px;" alt="logo">
+        </div>
+
+    </div>
+
 </div>
 
-<script src="main.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+
 <script src="jquery-waves.min.js"></script>
+
+<script src="main.js"></script>
 
 </body>
 </html>

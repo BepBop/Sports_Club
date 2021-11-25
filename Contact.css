@@ -2,8 +2,6 @@
 
 body{
     font-family: 'Inter', sans-serif;
-    //overflow: hidden;
-    //margin-top: 5vh;
     margin-top: 1vh;
     overflow: hidden;
     cursor: default;
@@ -18,12 +16,12 @@ body{
 }
 
 .sign {
-    //background-color: black;
+
     width: 500px;
     font-size: 10vh;
     color: white;
     transform: skewY(-4deg);
-    font-weight: bolder;
+
 }
 
 .sign2 {
@@ -72,6 +70,7 @@ body{
     border-style: solid;
     font-size: 150%;
     margin-left: 2%;
+    cursor: pointer;
 }
 
 #submitBtn.on {
