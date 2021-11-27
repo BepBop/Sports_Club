@@ -1,4 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@750&display=swap');
+
+@font-face {
+    font-family: Inter-Black;
+    src: url("Inter-Black.ttf");
+}
 
 body {
     font-family: 'Inter', sans-serif;
@@ -11,26 +16,59 @@ body {
     height: 100%;
     background-image: url("cool-background2.png");
     background-size: cover;
-/*    background-repeat: no-repeat;
-    background-position: 50% 50%;*/
 }
 
 .about {
-    font-weight: bolder;
+    font-weight: 1000;
     font-size: 400%;
-    color: white;
+    color: #ffffff;
     text-align: center;
     padding-top: 20%;
     text-shadow: 0 0 1px white, 0 0 2px black;
 }
 
 .essay {
-    margin-left: 1%;
-     font-size: 250%;
-     padding: 5% 25%;
-     color: darkblue;
-   /* font-weight: 550;*/
+    font-family: Inter-Black, sans-serif;
+    margin-left: 2.5%;
+    font-size: 275%;
+    padding: 5% 20%;
+    color: darkblue;
+    font-weight: 1000;
+}
 
+.container {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+
+}
+
+.essay2 {
+    display: flex;
+    padding: 5%;
+}
+
+.essay2 img {
+
+    object-fit: cover;
+    margin: auto;
+    width: 75%;
+}
+
+
+.essay3 {
+    display: flex;
+    width: 75%;
+    padding: 5%;
+    font-size: 225%;
+    background-color: darkblue;
+    color: #ffffff;
+    line-height: 125%;
+}
+
+.essay4 {
+    margin: auto;
+    text-align: center;
 }
 
 @media screen and (max-width: 1000px) {

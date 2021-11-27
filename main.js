@@ -1,5 +1,4 @@
-new fullpage('#fullpage', {
-    //options here
+ new fullpage('#fullpage', {
     autoScrolling: true,
     continuousVertical: true,
     scrollingSpeed: 600,
@@ -8,24 +7,24 @@ new fullpage('#fullpage', {
 let xyz = document.getElementById("main");
 xyz.addEventListener('click', () => {
     xyz.scrollLeft = xyz.scrollLeft >= document.body.scrollWidth ? 0 : document.body.scrollWidth;
-})
+});
 
 
 let W = document.getElementById("pica");
 W.addEventListener("load", () => {
-    OG.call(W, 1, 6)
+    OG.call(W, 1, 6);
 });
 let X = document.getElementById("picb");
 X.addEventListener("load", () => {
-    OG.call(X, 7, 12)
+    OG.call(X, 7, 12);
 });
 let Y = document.getElementById("picc");
 Y.addEventListener("load", () => {
-    OG.call(Y, 13, 19)
+    OG.call(Y, 13, 19);
 });
 let Z = document.getElementById("picd");
 Z.addEventListener("load", () => {
-    OG.call(Z, 20, 27)
+    OG.call(Z, 20, 27);
 });
 
 function OG(a, b) {
@@ -85,7 +84,9 @@ function OG(a, b) {
                     context.src = images[m];
                     await sleep(500);
                     m = m === b ? a : m;
-                } else break;
+                } else {
+                    break;
+                }
             }
         }
 
@@ -97,7 +98,8 @@ let sections = document.querySelectorAll('.image');
 let options = {
     rootMargin: '0px',
     threshold: 0.2
-}
+};
+
 let callback = (entries) => {
     entries.forEach((entry) => {
         let target = entry.target;
@@ -107,12 +109,14 @@ let callback = (entries) => {
         } else {
             target.classList.remove("meow");
         }
-    })
-}
-let observer = new IntersectionObserver(callback, options)
+    });
+};
+
+let observer = new IntersectionObserver(callback, options);
+
 sections.forEach((section,) => {
-    observer.observe(section)
-})
+    observer.observe(section);
+});
 
 
 let sections2 = document.getElementById("blue");
@@ -170,7 +174,7 @@ sections2.addEventListener("click", () => {
 
 
     }
-})
+});
 
 
 let roundLogEl = document.querySelector('.dot');
@@ -188,10 +192,11 @@ let callback2 = (entries) => {
             });
 
         }
-    })
-}
+    });
+};
 
-let observer2 = new IntersectionObserver(callback2, options)
+let observer2 = new IntersectionObserver(callback2, options);
+
 sections.forEach((roundLogEl,) => {
-    observer2.observe(roundLogEl)
-})
+    observer2.observe(roundLogEl);
+});
