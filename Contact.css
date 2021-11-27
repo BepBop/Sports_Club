@@ -1,7 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@800&display=swap');
+@font-face {
+    font-family: Gilroy-Bold;
+    src: url("Gilroy-Bold.ttf");
+}
 
 body{
-    font-family: 'Inter', sans-serif;
+    font-family: 'Gilroy-Bold', sans-serif;
     margin-top: 1vh;
     overflow: hidden;
     cursor: default;

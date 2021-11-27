@@ -1,7 +1,18 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@800&display=swap');
+@font-face {
+
+    font-family: Gilroy-SemiBold;
+    src: url("Gilroy-SemiBold.ttf");
+}
+
+
+@font-face {
+    font-family: Gilroy-ExtraBold;
+    src: url("Gilroy-ExtraBold.ttf");
+}
+
 
 body {
-    font-family: Inter, sans-serif;
+    font-family: Gilroy-SemiBold, sans-serif;
     background-color: rgba(250, 250, 255, 1);
 }
 
@@ -12,8 +23,7 @@ body {
     height: 85%;
     justify-content: center;
     font-size: 6rem;
-    font-weight: bold;
-
+    font-family: Gilroy-ExtraBold, sans-serif;
 }
 
 .aaaa {
