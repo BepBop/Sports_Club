@@ -2,6 +2,7 @@
     autoScrolling: true,
     continuousVertical: true,
     scrollingSpeed: 600,
+     lockAnchors: true,
 });
 
 let xyz = document.getElementById("main");

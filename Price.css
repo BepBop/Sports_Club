@@ -13,7 +13,7 @@
 
 body {
     font-family: Gilroy-SemiBold, sans-serif;
-    background-color: rgba(250, 250, 255, 1);
+    background-color: rgba(250, 250, 255);
 }
 
 .H {
@@ -78,21 +78,14 @@ body {
 }
 
 .single_price_plan .title h3 {
-    font-size: 1.25rem;
+    font-size: 1.5rem;
+    color: navy;
 }
 
 .single_price_plan .title p {
-    font-weight: 300;
     line-height: 1;
     font-size: 1rem;
 
-}
-
-.single_price_plan .title .line {
-    width: 80px;
-    height: 4px;
-    border-radius: 10px;
-    background-color: blue;
 }
 
 .single_price_plan .price {
@@ -102,7 +95,7 @@ body {
 .single_price_plan .price h4 {
     position: relative;
     z-index: 1;
-    font-size: 2.4rem;
+    font-size: 2.5rem;
     line-height: 1;
     margin-bottom: 0;
     display: inline-block;
