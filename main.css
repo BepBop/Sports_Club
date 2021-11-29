@@ -150,7 +150,7 @@ nav a:hover {
 
 #one.faint_color, #two.faint_color, #three.faint_color {
     font-family: Gilroy-Black, sans-serif;
-    font-size: 8vmax;
+    font-size: 8vw;
     color: #000e8d;
     letter-spacing: 0.1vw;
     position: relative;
@@ -170,7 +170,7 @@ nav a:hover {
 
 #one.og, #two.og, #three.og {
     font-family: Gilroy-Black, sans-serif;
-    font-size: 8vmax;
+    font-size: 8vw;
     color: #000e8d;
     letter-spacing: 0.1vw;
     position: relative;
@@ -349,7 +349,7 @@ button {
     width: 100%;
     font-family: "Roboto Thin", sans-serif;
     color: #000e8d;
-    font-size: 12vmax;
+    font-size: 12vw;
 }
 
 
