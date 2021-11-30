@@ -1,8 +1,8 @@
- new fullpage('#fullpage', {
+new fullpage('#fullpage', {
     autoScrolling: true,
     continuousVertical: true,
     scrollingSpeed: 600,
-     lockAnchors: true,
+    lockAnchors: true,
 });
 
 let xyz = document.getElementById("main");
