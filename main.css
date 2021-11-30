@@ -251,7 +251,7 @@ button {
     height: 100%;
     overflow-x: hidden;
     display: flex;
-    font-size: 3vw;
+    font-size: 6vmin;
     font-family: Gilroy-Bold, sans-serif;
 }
 
