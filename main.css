@@ -344,7 +344,7 @@ button {
     background-color: black;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: center;
     height: 100%;
     width: 100%;
     font-family: "Roboto Thin", sans-serif;
