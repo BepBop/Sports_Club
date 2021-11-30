@@ -7,10 +7,9 @@
     body {
         background-color: #000e8d;
         transform: scale(0.5);
-        margin-left: -35%;
+        margin: auto;
     }
 }
-
 
 
 body{
@@ -21,35 +20,37 @@ body{
 }
 
 .hero {
+    display: flex;
+    flex-direction: column;
     background-color: #000e8d;
     transform: skewY(4deg);
-    transform-origin: 0;
-    padding: 10% 25% 100% 25%;
-
+    transform-origin: top left;
+    width: 99vw;
+    height: 99vh;
+    justify-content: center;
+    align-items:center;
 }
 
 .sign {
 
-    width: 500px;
+    width: 600px;
     font-size: 10vh;
     color: white;
     transform: skewY(-4deg);
-
 }
 
 .sign2 {
+    width: 600px;
     font-size: 125%;
     color: white;
     transform: skewY(-4deg);
-    padding: 2.5% 0 10% 0;
-
+    padding: 1% 0 5% 0;
 }
 
 .form {
     transform: skewY(-4deg);
     width: 600px;
     height: 100px;
-    //background-color: black;
 }
 
 .emailinput {
