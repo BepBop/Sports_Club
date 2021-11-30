@@ -150,7 +150,7 @@ nav a:hover {
 
 #one.faint_color, #two.faint_color, #three.faint_color {
     font-family: Gilroy-Black, sans-serif;
-    font-size: 8vw;
+    font-size: 15vmin;
     color: #000e8d;
     letter-spacing: 0.1vw;
     position: relative;
@@ -170,7 +170,8 @@ nav a:hover {
 
 #one.og, #two.og, #three.og {
     font-family: Gilroy-Black, sans-serif;
-    font-size: 8vw;
+    font-size: 15vmin;
+    text-align: center;
     color: #000e8d;
     letter-spacing: 0.1vw;
     position: relative;
