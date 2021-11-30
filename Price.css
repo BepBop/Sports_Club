@@ -16,17 +16,21 @@ body {
     background-color: rgba(250, 250, 255);
 }
 
-.H {
+body::-webkit-scrollbar {
+    display: none;
+}
 
+.H {
+    text-align: center;
     display: flex;
     flex-direction: column;
     height: 85%;
     justify-content: center;
-    font-size: 6rem;
+    font-size: 15vmin;
     font-family: Gilroy-ExtraBold, sans-serif;
 }
 
-.aaaa {
+.aa {
     padding: 1%;
     display: flex;
     justify-content: center;
@@ -34,7 +38,7 @@ body {
 
 }
 
-.bbbb {
+.bb {
     padding: 1%;
     display: flex;
     justify-content: center;
@@ -113,8 +117,6 @@ body {
     line-height: 16px;
     margin: 0;
     padding: 10px 0;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
     -webkit-box-align: center;
     -ms-flex-align: center;
@@ -196,3 +198,4 @@ body {
         transform: translateY(0px);
     }
 }
+

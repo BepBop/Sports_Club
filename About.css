@@ -22,6 +22,9 @@ body {
 }
 
 .Intro {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 100%;
     height: 100%;
     background-image: url("cool-background2.svg");
@@ -30,18 +33,33 @@ body {
 }
 
 .about {
+
     font-family: Gilroy-Heavy, sans-serif;
     font-size: 400%;
     color: #ffffff;
     text-align: center;
-    padding-top: 20%;
     text-shadow: 0 0 1px white, 0 0 2px black;
 }
 
-.essay  {
-    margin-left: 5%;
-    font-size: 275%;
-    padding: 5% 20%;
+@media only screen and (max-width: 700px) {
+
+     .about {
+         text-shadow: 0 0 1px white, 0 0 4px mediumblue;
+     }
+
+ }
+
+.about:hover {
+    text-shadow: 0 0 1px white, 0 0 4px mediumblue;
+}
+
+
+.essay {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    font-size: 6vmin;
+    padding: 0 20%;
     color: darkblue;
     font-family: Gilroy-Black, sans-serif;
 }
@@ -51,7 +69,7 @@ body {
     flex-wrap: nowrap;
     justify-content: space-between;
     font-family: Gilroy-ExtraBold, sans-serif;
-    height: 95%;
+    height: 90%;
 
 }
 
@@ -64,15 +82,15 @@ body {
 
     object-fit: cover;
     margin: auto;
-    width: 75%;
+    width: 65%;
 }
 
 
 .essay3 {
     display: flex;
-    width: 75%;
+    width: 65%;
     padding: 5%;
-    font-size: 225%;
+    font-size: 5vmin;
     background-color: darkblue;
     color: #ffffff;
     line-height: 125%;
@@ -83,11 +101,6 @@ body {
     text-align: center;
 }
 
-@media screen and (max-width: 1000px) {
-    .essay {
-        font-size: 200%;
-    }
-}
 
 
 
