@@ -151,6 +151,7 @@ nav a:hover {
 #one.faint_color, #two.faint_color, #three.faint_color {
     font-family: Gilroy-Black, sans-serif;
     font-size: 15vmin;
+    text-align: center;
     color: #000e8d;
     letter-spacing: 0.1vw;
     position: relative;
@@ -241,7 +242,7 @@ button {
     background-color: rgba(1, 1, 1, 0.2);
     color: rgb(255, 255, 255);
     border: medium solid;
-    font-size: 250%;
+    font-size: 6vmin;
     padding: 1% 1.5%;
     cursor: pointer;
 }
@@ -351,6 +352,7 @@ button {
     font-family: "Roboto Thin", sans-serif;
     color: #000e8d;
     font-size: 12vw;
+
 }
 
 
@@ -383,4 +385,16 @@ button {
     padding: 0 1% 1% 1%;
     display: flex;
     Justify-content: flex-end;
+
 }
+
+@media (max-width: 800px) {
+
+    .footer-image {
+        width: 0;
+        height: 0;
+    }
+
+
+}
+
