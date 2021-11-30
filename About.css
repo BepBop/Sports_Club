@@ -44,13 +44,13 @@ body {
 @media only screen and (max-width: 700px) {
 
      .about {
-         text-shadow: 0 0 1px white, 0 0 4px mediumblue;
+         text-shadow: 0 0 1px white, 0 0 4px blue;
      }
 
  }
 
 .about:hover {
-    text-shadow: 0 0 1px white, 0 0 4px mediumblue;
+    text-shadow: 0 0 1px white, 0 0 4px blue;
 }
 
 
