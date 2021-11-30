@@ -2,12 +2,12 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <title>Contacts</title>
-    <link rel="icon" href="Logo.svg"
+    <link href="Logo.svg" rel="icon"
           type="image/x-icon"/>
-    <link rel=stylesheet href="Contact.css">
-    <link rel="stylesheet" href="jquery-waves.min.css">
+    <link href="Contact.css" rel=stylesheet>
+    <link href="jquery-waves.min.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.2.0/dist/sweetalert2.all.min.js"></script>
 
 
@@ -21,11 +21,12 @@
     <div class="sign2">Coming this summer.</div>
     <div class="form">
         <label>
-            <input type="email" class="emailinput" placeholder="Email" size="320" required>
+            <input class="emailinput" placeholder="Email" required size="320" type="email">
         </label>
-        <button type="button" id='submitBtn' disabled="disabled" data-waves
-                data-waves-background-color="rgba(0, 0, 200, 0.35)" data-waves-duration="400"
-                data-waves-hide-duration="400" onclick="validateEmail()">
+        <button data-waves data-waves-background-color="rgba(0, 0, 200, 0.35)" data-waves-duration="400"
+                data-waves-hide-duration="400"
+                disabled="disabled" id='submitBtn'
+                onclick="validateEmail()" type="button">
             I'm Interested
         </button>
 

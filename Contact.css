@@ -12,7 +12,7 @@
 }
 
 
-body{
+body {
     font-family: 'Gilroy-Bold', sans-serif;
     margin-top: 1vh;
     overflow: hidden;
@@ -28,7 +28,7 @@ body{
     width: 99vw;
     height: 99vh;
     justify-content: center;
-    align-items:center;
+    align-items: center;
 }
 
 .sign {
