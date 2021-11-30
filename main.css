@@ -150,7 +150,7 @@ nav a:hover {
 
 #one.faint_color, #two.faint_color, #three.faint_color {
     font-family: Gilroy-Black, sans-serif;
-    font-size: 15vmin;
+    font-size: 12vmin;
     text-align: center;
     color: #000e8d;
     letter-spacing: 0.1vw;
@@ -165,13 +165,14 @@ nav a:hover {
     left: 0;
     right: 0;
     bottom: 0;
+    text-align: center;
     animation: slogan 1.35s ease-in-out alternate 2;
     opacity: 1;
 }
 
 #one.og, #two.og, #three.og {
     font-family: Gilroy-Black, sans-serif;
-    font-size: 15vmin;
+    font-size: 12vmin;
     text-align: center;
     color: #000e8d;
     letter-spacing: 0.1vw;
@@ -242,7 +243,7 @@ button {
     background-color: rgba(1, 1, 1, 0.2);
     color: rgb(255, 255, 255);
     border: medium solid;
-    font-size: 6vmin;
+    font-size:  6vmin;
     padding: 1% 1.5%;
     cursor: pointer;
 }
@@ -395,6 +396,9 @@ button {
         height: 0;
     }
 
+    button {
+       font-size: 7vmin;
+    }
 
 }
 
