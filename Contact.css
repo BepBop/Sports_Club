@@ -3,6 +3,16 @@
     src: url("Gilroy-Bold.ttf");
 }
 
+@media only screen and (max-width: 600px) {
+    body {
+        background-color: #000e8d;
+        transform: scale(0.5);
+        margin-left: -35%;
+    }
+}
+
+
+
 body{
     font-family: 'Gilroy-Bold', sans-serif;
     margin-top: 1vh;
