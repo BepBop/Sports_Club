@@ -2,7 +2,7 @@ new fullpage('#fullpage', {
     autoScrolling: true,
     continuousVertical: true,
     scrollingSpeed: 600,
-    lockAnchors: true,
+
 });
 
 let xyz = document.getElementById("main");
@@ -97,14 +97,13 @@ function OG(a, b) {
 
 let sections = document.querySelectorAll('.image');
 let options = {
-    rootMargin: '0px',
-    threshold: 0.2
+    threshold: 0.5
 };
 
 let callback = (entries) => {
     entries.forEach((entry) => {
         let target = entry.target;
-        if (entry.intersectionRatio >= 0.1) {
+        if (entry.intersectionRatio >= 0.2) {
             target.classList.add("meow");
             target.classList.add("o");
         } else {
@@ -182,7 +181,10 @@ let roundLogEl = document.querySelector('.dot');
 
 let callback2 = (entries) => {
     entries.forEach((entry) => {
-        if (entry.intersectionRatio >= 0.1) {
+
+
+        if (entry.intersectionRatio >= 0.2 && entry.intersectionRatio <= 0.9) {
+            console.log(entry.intersectionRatio);
 
             anime({
                 targets: roundLogEl,
