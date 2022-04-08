@@ -172,7 +172,7 @@ let roundLogEl = document.querySelector(".dot");
 
 let callback2 = (entries) => {
   entries.forEach((entry) => {
-    if (entry.intersectionRatio > 0.1 && entry.intersectionRatio < 0.75) {
+    if (entry.intersectionRatio > 0 && entry.intersectionRatio < 0.75) {
       anime({
         targets: roundLogEl,
         innerHTML: [0, 50],
