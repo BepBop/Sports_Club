@@ -11,6 +11,7 @@ xyz.addEventListener("click", () => {
 });
 
 
+
 let W = document.getElementById("pica");
 W.addEventListener("load", () => {
     OG.call(W, 1, 6);
@@ -73,11 +74,11 @@ function OG(a, b) {
     function fun() {
         const context = this;
 
-        function sleep(ms) {
+        async function sleep(ms) {
             return new Promise((resolve) => setTimeout(resolve, ms));
         }
 
-        async function delay() {
+         async function delay() {
             let m = a;
             while (++m <= b) {
                 if (flag) {
@@ -169,26 +170,25 @@ sections2.addEventListener("click", () => {
     }
 });
 
-let roundLogEl = document.querySelector(".dot");
-
 let callback2 = (entries) => {
     entries.forEach((entry) => {
+        if ((entry.intersectionRatio > 0 && entry.intersectionRatio < 0.75)) {
+            anime({
+                targets: document.querySelector(".dot"),
+                innerHTML: [0, 50],
+                easing: "easeInOutQuad",
+                round: 1,
+                duration: 3000,
+            });
+        }
 
-        anime({
-            targets: roundLogEl,
-            innerHTML: [0, 50],
-            easing: "easeInOutQuad",
-            round: 1,
-            duration: 2800,
-            loop: true,
-        });
-
-        console.log(roundLogEl);
     });
 };
 
 let observer2 = new IntersectionObserver(callback2, options);
 
-sections.forEach((roundLogEl) => {
-    observer2.observe(roundLogEl);
+sections.forEach((main_elements) => {
+    observer2.observe(main_elements);
+
 });
+
