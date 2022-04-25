@@ -10,6 +10,7 @@ xyz.addEventListener("click", () => {
         xyz.scrollLeft >= document.body.scrollWidth ? 0 : document.body.scrollWidth;
 });
 
+
 let W = document.getElementById("pica");
 W.addEventListener("load", () => {
     OG.call(W, 1, 6);
@@ -62,14 +63,14 @@ function OG(a, b) {
 
     this.addEventListener("mouseover", () => {
         flag = true;
-        ab.call(this);
+        fun.call(this);
     });
 
     this.addEventListener("mouseout", () => {
         flag = false;
     });
 
-    function ab() {
+    function fun() {
         const context = this;
 
         function sleep(ms) {
@@ -172,15 +173,17 @@ let roundLogEl = document.querySelector(".dot");
 
 let callback2 = (entries) => {
     entries.forEach((entry) => {
-        if (entry.intersectionRatio > 0 && entry.intersectionRatio < 0.75) {
-            anime({
-                targets: roundLogEl,
-                innerHTML: [0, 50],
-                easing: "easeInOutQuad",
-                round: 1,
-                duration: 2800,
-            });
-        }
+
+        anime({
+            targets: roundLogEl,
+            innerHTML: [0, 50],
+            easing: "easeInOutQuad",
+            round: 1,
+            duration: 2800,
+            loop: true,
+        });
+
+        console.log(roundLogEl);
     });
 };
 
