@@ -4,7 +4,7 @@ new fullpage("#fullpage", {
     scrollingSpeed: 600,
 });
 
-let xyz = document.getElementById("main");
+const xyz = document.getElementById("main");
 xyz.addEventListener("click", () => {
     xyz.scrollLeft =
         xyz.scrollLeft >= document.body.scrollWidth ? 0 : document.body.scrollWidth;
@@ -12,26 +12,26 @@ xyz.addEventListener("click", () => {
 
 
 
-let W = document.getElementById("pica");
+const W = document.getElementById("pica");
 W.addEventListener("load", () => {
     OG.call(W, 1, 6);
 });
-let X = document.getElementById("picb");
+const X = document.getElementById("picb");
 X.addEventListener("load", () => {
     OG.call(X, 7, 12);
 });
-let Y = document.getElementById("picc");
+const Y = document.getElementById("picc");
 Y.addEventListener("load", () => {
     OG.call(Y, 13, 19);
 });
-let Z = document.getElementById("picd");
+const Z = document.getElementById("picd");
 Z.addEventListener("load", () => {
     OG.call(Z, 20, 27);
 });
 
 function OG(a, b) {
-    let flag;
-    let images = [
+    let flag = false;
+    const images = [
         "0.webp",
         "1.webp",
         "2.webp",
@@ -118,13 +118,13 @@ sections.forEach((section) => {
     observer.observe(section);
 });
 
-let sections2 = document.getElementById("blue");
+const sections2 = document.getElementById("blue");
 
-let sections3 = document.getElementById("one");
-let sections4 = document.getElementById("two");
-let sections5 = document.getElementById("three");
+const sections3 = document.getElementById("one");
+const sections4 = document.getElementById("two");
+const sections5 = document.getElementById("three");
 
-let sections6 = document.getElementById("logo");
+const sections6 = document.getElementById("logo");
 
 sections2.addEventListener("click", () => {
     sections2.classList.add("color_drop");
