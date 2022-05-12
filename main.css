@@ -312,6 +312,7 @@ button {
 }
 
 .image.o:hover {
+    object-fit: scale-down;
 
     transition: transform 1000ms;
     transform: scale(0.90);
@@ -320,6 +321,7 @@ button {
 }
 
 .image.o {
+    object-fit: scale-down;
     transition: transform 1000ms;
     transform: scale(0.75);
     opacity: 1;
