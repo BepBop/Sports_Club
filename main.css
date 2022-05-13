@@ -249,83 +249,125 @@ button {
 }
 
 #main {
-    height: 100%;
-    overflow-x: hidden;
-    display: flex;
+
+    overflow-x: scroll;
+
+    display: grid;
+    grid-template-rows: 100vh;
+    grid-template-columns: repeat(2, 100vw);
+
+    column-gap: 5%;
+
     font-size: 6vmin;
     font-family: Gilroy-Bold, sans-serif;
-}
 
-.skate, .ath {
-    display: flex;
-    min-width: 50vw;
-    max-height: 100vh;
-}
-
-.foot, .bask {
-
-    display: flex;
-    justify-content: flex-end;
-    min-width: 50vw;
-    max-height: 100vh;
-    overflow: hidden;
-}
-
-.skate .animated_text, .ath .animated_text {
-    padding-top: 20%;
 
 }
 
-.foot .animated_text, .bask .animated_text {
+.a {
+    display: grid;
+    grid-template-rows: 100vh;
+    grid-template-columns: repeat(2, 50vw);
 
-    padding-top: 65%;
+}
+
+.b {
+    display: grid;
+    grid-template-rows: 100vh;
+    grid-template-columns: repeat(2, 50vw);
 }
 
 
-@media (max-width: 1100px) {
 
-    .skate img, .ath img {
-        object-fit: scale-down;
-        width: 100%;
-        height: 100%;
+.skate {
 
-    }
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(20, 1fr);
 
-    .foot img, .bask img {
-        object-fit: scale-down;
-        width: 100%;
-        height: 100%;
-    }
-
-    .skate .animated_text, .ath .animated_text {
-        font-size: 0;
-    }
-
-
-    .foot .animated_text, .bask .animated_text {
-        font-size: 0;
-    }
 }
+
+.skate img {
+    grid-area: 4 / 2 / 19 / 9;
+}
+
+.skate .animated_text {
+    grid-area: 5 / 9 / 5 / 12;
+}
+
+.foot {
+
+    display: grid;
+    grid-template-columns: repeat(14, 1fr);
+    grid-template-rows: repeat(20, 1fr);
+
+}
+
+.foot img {
+    grid-area: 4 / 6 / 19 / 13;
+}
+
+.foot .animated_text {
+    grid-area: 17 / 2 / 17 / 4;
+}
+
+
+.ath {
+
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(20, 1fr);
+
+}
+
+
+.bask {
+
+    display: grid;
+    grid-template-columns: repeat(14, 1fr);
+    grid-template-rows: repeat(20, 1fr);
+
+}
+
+.ath img {
+    grid-area: 4 / 2 / 19 / 9;
+}
+
+.ath .animated_text {
+    grid-area: 5 / 9 / 5 / 12;
+
+}
+
+.bask img {
+    grid-area: 4 / 6 / 19 / 13;
+}
+
+.bask .animated_text {
+    grid-area: 17 / 1 / 17 / 4;
+}
+
 
 .image {
     opacity: 0;
+    object-fit: scale-down;
+    max-width: 75vw;
+    max-height: 75vh;
+}
+
+.image.o {
+
+    object-fit: scale-down;
+    transition: transform 1000ms;
+    transform: scale(0.9);
+    opacity: 1;
+
 }
 
 .image.o:hover {
     object-fit: scale-down;
-
     transition: transform 1000ms;
-    transform: scale(0.90);
+    transform: scale(1.0);
     cursor: none;
-
-}
-
-.image.o {
-    object-fit: scale-down;
-    transition: transform 1000ms;
-    transform: scale(0.75);
-    opacity: 1;
-
 }
 
 .image.meow {
@@ -336,14 +378,13 @@ button {
 @keyframes smoke {
     0% {
         opacity: 0;
-        transform: scale(0.90);
+        transform: scale(1.0);
     }
     100% {
         opacity: 1;
-        transform: scale(0.75);
+        transform: scale(0.9);
     }
 }
-
 
 
 .container {
@@ -381,6 +422,74 @@ button {
 
     button {
         font-size: 15vmin;
+    }
+
+}
+
+@media (max-width: 1200px) {
+
+    .skate, .bask, .ath, .foot {
+        all:unset;
+        display: grid;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .image {
+        transform: scale(0.9);
+    }
+
+
+    .skate .animated_text, .ath .animated_text {
+        display: none;
+    }
+
+
+    .foot .animated_text, .bask .animated_text {
+        display: none;
+    }
+
+}
+
+@media (max-width: 500px) {
+
+    #main {
+        all:unset;
+
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    .a,.b {
+        all:unset;
+
+        display: flex;
+        padding: 5% 0;
+
+    }
+
+    .skate .animated_text, .ath .animated_text {
+        display: none;
+    }
+
+
+    .foot .animated_text, .bask .animated_text {
+        display: none;
+    }
+
+}
+
+@media (max-height: 600px) {
+
+
+    .skate .animated_text, .ath .animated_text {
+        display: none;
+    }
+
+
+    .foot .animated_text, .bask .animated_text {
+        display: none;
     }
 
 }

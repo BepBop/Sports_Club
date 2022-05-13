@@ -1,7 +1,5 @@
 new fullpage("#fullpage", {
-    autoScrolling: true,
-    continuousVertical: true,
-    scrollingSpeed: 600,
+    
 });
 
 const xyz = document.getElementById("main");
