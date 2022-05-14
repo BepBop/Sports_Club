@@ -278,7 +278,6 @@ button {
 }
 
 
-
 .skate {
 
     display: grid;
@@ -349,14 +348,13 @@ button {
 
 .image {
     opacity: 0;
-    object-fit: cover;
-    max-width: 77vw;
-    max-height: 77vh;
 }
 
 .image.o {
 
     object-fit: scale-down;
+    max-width: 75vw;
+    max-height: 75vh;
     transition: transform 1000ms;
     transform: scale(0.9);
     opacity: 1;
@@ -428,11 +426,8 @@ button {
 
 @media only screen and (max-width: 750px) {
 
-    body {
-    }
-
     #main, .a, .b, .skate, .bask, .foot, .ath {
-        all:unset;
+        all: unset;
     }
 
     #main {
@@ -443,15 +438,27 @@ button {
         justify-content: space-between;
     }
 
+    .image {
+        all:unset;
+        object-fit: cover;
+        max-width: 50vw;
+        transition: transform 1000ms;
+        transform: scale(0.9);
+        opacity: 1;
+    }
 
     .image.o {
         all:unset;
-        object-fit: contain;
-        max-height: 45vh;
+        object-fit: cover;
+        max-width: 50vw;
+        transition: transform 1000ms;
         transform: scale(0.9);
+        opacity: 1;
     }
 
-
+    .image.o:hover {
+        all: unset;
+    }
 
     .skate .animated_text, .ath .animated_text {
         display: none;
@@ -481,7 +488,7 @@ button {
 @media only screen and (max-width: 1300px) and (min-width: 750px) {
 
     .skate, .bask, .ath, .foot {
-        all:unset;
+        all: unset;
         display: grid;
         justify-content: center;
         align-items: center;
