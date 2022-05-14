@@ -5,7 +5,7 @@ new fullpage("#fullpage", {
 const xyz = document.getElementById("main");
 xyz.addEventListener("click", () => {
     xyz.scrollLeft =
-        xyz.scrollLeft >= document.body.scrollWidth ? 0 : document.body.scrollWidth;
+        xyz.scrollLeft >= document.body.scrollWidth ? 0 : 2*document.body.scrollWidth;
 });
 
 

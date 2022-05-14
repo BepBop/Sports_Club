@@ -350,8 +350,8 @@ button {
 .image {
     opacity: 0;
     object-fit: scale-down;
-    max-width: 75vw;
-    max-height: 75vh;
+    max-width: 77vw;
+    max-height: 77vh;
 }
 
 .image.o {
@@ -419,14 +419,65 @@ button {
 
 @media (max-width: 800px) {
 
-
     button {
         font-size: 15vmin;
     }
 
 }
 
-@media (max-width: 1200px) {
+
+@media only screen and (max-width: 500px) {
+
+    #main, .a, .b, .skate, .bask, .foot, .ath {
+        all:unset;
+    }
+
+    #main {
+        overflow: scroll;
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: flex-start;
+    }
+
+    .image {
+        all:unset;
+    }
+
+    .image.o {
+        max-height: 50vh;
+    }
+
+    .image.o:hover {
+        all:unset;
+    }
+
+
+    .skate .animated_text, .ath .animated_text {
+       font-size: 0;
+    }
+
+
+    .foot .animated_text, .bask .animated_text {
+        font-size: 0;
+    }
+
+}
+
+
+@media (max-height: 600px) {
+
+    .skate .animated_text, .ath .animated_text {
+        display: none;
+    }
+
+
+    .foot .animated_text, .bask .animated_text {
+        display: none;
+    }
+
+}
+
+@media only screen and (max-width: 1200px) and (min-width: 700px) {
 
     .skate, .bask, .ath, .foot {
         all:unset;
@@ -438,49 +489,6 @@ button {
     .image {
         transform: scale(0.9);
     }
-
-
-    .skate .animated_text, .ath .animated_text {
-        display: none;
-    }
-
-
-    .foot .animated_text, .bask .animated_text {
-        display: none;
-    }
-
-}
-
-@media (max-width: 500px) {
-
-    #main {
-        all:unset;
-
-        display: flex;
-        flex-direction: column;
-
-    }
-
-    .a,.b {
-        all:unset;
-
-        display: flex;
-        padding: 5% 0;
-
-    }
-
-    .skate .animated_text, .ath .animated_text {
-        display: none;
-    }
-
-
-    .foot .animated_text, .bask .animated_text {
-        display: none;
-    }
-
-}
-
-@media (max-height: 600px) {
 
 
     .skate .animated_text, .ath .animated_text {
