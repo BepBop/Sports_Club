@@ -429,7 +429,6 @@ button {
 @media only screen and (max-width: 750px) {
 
     body {
-        background: red;
     }
 
     #main, .a, .b, .skate, .bask, .foot, .ath {
@@ -442,14 +441,13 @@ button {
         flex-flow: row nowrap;
         align-items: center;
         justify-content: space-between;
-        background: #9a27ae;
     }
 
 
     .image.o {
         all:unset;
         object-fit: contain;
-        max-height: 50vh;
+        max-height: 45vh;
         transform: scale(0.9);
     }
 
@@ -480,7 +478,7 @@ button {
 
 }
 
-@media only screen and (max-width: 1300px) and (min-width: 700px) {
+@media only screen and (max-width: 1300px) and (min-width: 750px) {
 
     .skate, .bask, .ath, .foot {
         all:unset;
