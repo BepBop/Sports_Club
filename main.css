@@ -393,7 +393,7 @@ button {
     justify-content: center;
     align-content: space-evenly;
     justify-items: center;
-    font-size: calc(8rem + 1vw);
+    font-size: 15vmin;
     background: black;
     color: #000e8d;
     font-family: "Roboto Light", sans-serif;
@@ -415,13 +415,6 @@ button {
     grid-row: 3/4;
 }
 
-@media (max-width: 800px) {
-
-    button {
-        font-size: 15vmin;
-    }
-
-}
 
 
 @media only screen and (max-width: 750px) {
@@ -431,16 +424,19 @@ button {
     }
 
     #main {
+        all:unset;
         overflow: scroll;
         display: flex;
         flex-flow: row nowrap;
         align-items: center;
         justify-content: space-between;
+
+        height: 100vh;
     }
 
     .image {
         all:unset;
-        object-fit: cover;
+        object-fit: scale-down;
         max-width: 50vw;
         transition: transform 1000ms;
         transform: scale(0.9);
@@ -449,7 +445,7 @@ button {
 
     .image.o {
         all:unset;
-        object-fit: cover;
+        object-fit: scale-down;
         max-width: 50vw;
         transition: transform 1000ms;
         transform: scale(0.9);
@@ -466,6 +462,16 @@ button {
 
 
     .foot .animated_text, .bask .animated_text {
+        display: none;
+    }
+
+
+    .container {
+
+        font-size: 10vmin;
+    }
+
+    .footer-image {
         display: none;
     }
 
