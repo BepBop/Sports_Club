@@ -1,3 +1,4 @@
+
 @font-face {
     font-family: Gilroy-Bold;
     src: url("Gilroy-Bold.ttf");
@@ -23,10 +24,10 @@ body {
     display: flex;
     flex-direction: column;
     background-color: #000e8d;
-    transform: skewY(4deg);
+    transform: skewY(7.5deg);
     transform-origin: top left;
     width: 99vw;
-    height: 99vh;
+    height: 100vh;
     justify-content: center;
     align-items: center;
 }
@@ -36,19 +37,19 @@ body {
     width: 600px;
     font-size: 10vh;
     color: white;
-    transform: skewY(-4deg);
+    transform: skewY(-7.5deg);
 }
 
 .sign2 {
     width: 600px;
     font-size: 125%;
     color: white;
-    transform: skewY(-4deg);
+    transform: skewY(-7.5deg);
     padding: 1% 0 5% 0;
 }
 
 .form {
-    transform: skewY(-4deg);
+    transform: skewY(-7.5deg);
     width: 600px;
     height: 100px;
 }
@@ -104,4 +105,3 @@ body {
     background-color: rgb(255, 255, 255);
     color: rgb(5, 24, 200);
 }
-

@@ -1,3 +1,5 @@
+
+
 @font-face {
 
     font-family: Gilroy-Heavy;
@@ -80,6 +82,8 @@ body {
 
 .essay2 img {
 
+    -o-object-fit: cover;
+
     object-fit: cover;
     margin: auto;
     width: 65%;
@@ -100,12 +104,3 @@ body {
     margin: auto;
     text-align: center;
 }
-
-
-
-
-
-
-
-
-

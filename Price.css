@@ -1,3 +1,4 @@
+
 @font-face {
 
     font-family: Gilroy-SemiBold;
@@ -153,6 +154,7 @@ body::-webkit-scrollbar {
     width: 80px;
     height: 60px;
     cursor: pointer;
+    -webkit-animation: amm 2s infinite;
     animation: amm 2s infinite;
 }
 
@@ -161,6 +163,7 @@ body::-webkit-scrollbar {
     height: 10px;
     background-color: darkblue;
     box-shadow: 0 3px 5px rgba(0, 0, 0, .2);
+    -webkit-animation: arrow 700ms linear infinite;
     animation: arrow 700ms linear infinite;
     transform: rotate(90deg);
 }
@@ -187,7 +190,7 @@ body::-webkit-scrollbar {
     transform: rotate(-45deg);
 }
 
-@keyframes amm {
+@-webkit-keyframes amm {
     0% {
         transform: translateY(0);
     }
@@ -199,3 +202,14 @@ body::-webkit-scrollbar {
     }
 }
 
+@keyframes amm {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(5px);
+    }
+    100% {
+        transform: translateY(0px);
+    }
+}

@@ -1,3 +1,4 @@
+
 @font-face {
     font-family: Gilroy-Black;
     src: url("Gilroy-Black.ttf");
@@ -50,9 +51,26 @@ body {
 }
 
 #blue.color_drop {
+    -webkit-animation: color_drop_animation 2s ease-out 1;
     animation: color_drop_animation 2s ease-out 1;
     cursor: url("cur.png") 0 0, auto;
     background: none;
+}
+
+@-webkit-keyframes color_drop_animation {
+    0% {
+        background: darkblue;
+    }
+
+    75% {
+        background: darkblue;
+        cursor: url("cur.png") 0 0, auto;
+    }
+
+    100% {
+        background: none;
+        cursor: url("cur.png") 0 0, auto;
+    }
 }
 
 @keyframes color_drop_animation {
@@ -83,6 +101,7 @@ body {
 #logo.move_diagonal {
     position: absolute;
     width: 15vmin;
+    -webkit-animation: dig 2s ease-in-out 1;
     animation: dig 2s ease-in-out 1;
     top: 0;
     left: 0;
@@ -95,6 +114,26 @@ body {
     top: 0;
     left: 0;
     transform: translate(7.5%, 7.5%);
+}
+
+
+@-webkit-keyframes dig {
+
+    0% {
+        position: absolute;
+        width: 30vmin;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    100% {
+        position: absolute;
+        width: 15vmin;
+        top: 0;
+        left: 0;
+        transform: translate(7.5%, 7.5%);
+    }
+
 }
 
 
@@ -158,6 +197,7 @@ nav a:hover {
     color: #000e8d;
     letter-spacing: 0.1vw;
     position: relative;
+    -webkit-animation: mongo steps(1, end) 1.7s;
     animation: mongo steps(1, end) 1.7s;
 }
 
@@ -169,6 +209,7 @@ nav a:hover {
     right: 0;
     bottom: 0;
     text-align: center;
+    -webkit-animation: slogan 1.35s ease-in-out alternate 2;
     animation: slogan 1.35s ease-in-out alternate 2;
     opacity: 1;
 }
@@ -182,6 +223,16 @@ nav a:hover {
     position: relative;
 }
 
+@-webkit-keyframes mongo {
+    0% {
+        color: transparent;
+        cursor: none;
+    }
+    100% {
+        color: #000e8d;
+    }
+}
+
 @keyframes mongo {
     0% {
         color: transparent;
@@ -189,6 +240,26 @@ nav a:hover {
     }
     100% {
         color: #000e8d;
+    }
+}
+
+@-webkit-keyframes slogan {
+    0% {
+        transform: scaleX(0);
+        transform-origin: left;
+        cursor: none;
+    }
+
+    25% {
+        background: rgba(0, 14, 141);
+        transform: scaleX(0);
+        transform-origin: left;
+    }
+
+    75%, 100% {
+        background: rgba(0, 14, 141);
+        transform: scaleX(1);
+        transform-origin: left;
     }
 }
 
@@ -213,6 +284,7 @@ nav a:hover {
 }
 
 video {
+    -o-object-fit: cover;
     object-fit: cover;
     width: 100vw;
     height: 100vh;
@@ -248,6 +320,8 @@ button {
     display: grid;
     grid-template-rows: 100vh;
     grid-template-columns: repeat(2, 100vw);
+
+    -moz-column-gap: 5%;
 
     column-gap: 5%;
 
@@ -346,6 +420,8 @@ button {
 
 .image.o {
 
+    -o-object-fit: scale-down;
+
     object-fit: scale-down;
     max-width: 75vw;
     max-height: 75vh;
@@ -356,6 +432,7 @@ button {
 }
 
 .image.o:hover {
+    -o-object-fit: scale-down;
     object-fit: scale-down;
     transition: transform 1000ms;
     transform: scale(1.0);
@@ -363,8 +440,20 @@ button {
 }
 
 .image.meow {
+    -webkit-animation: smoke ease-out 1000ms;
     animation: smoke ease-out 1000ms;
 
+}
+
+@-webkit-keyframes smoke {
+    0% {
+        opacity: 0;
+        transform: scale(1.0);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(0.9);
+    }
 }
 
 @keyframes smoke {
@@ -429,6 +518,7 @@ button {
 
     .image {
         all:unset;
+        -o-object-fit: scale-down;
         object-fit: scale-down;
         max-width: 50vw;
         transition: transform 1000ms;
@@ -438,6 +528,7 @@ button {
 
     .image.o {
         all:unset;
+        -o-object-fit: scale-down;
         object-fit: scale-down;
         max-width: 50vw;
         transition: transform 1000ms;

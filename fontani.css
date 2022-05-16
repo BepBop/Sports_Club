@@ -1,4 +1,5 @@
 
+
 .animated_text {
     --color-of-text: #000e8d;
     position: relative;
@@ -14,25 +15,34 @@
 
 .animated_text a:nth-child(1) {
 
+    -webkit-clip-path: polygon(0 0, 100% 0, 50% 50%);
+
     clip-path: polygon(0 0, 100% 0, 50% 50%);
 }
 
 .animated_text a:nth-child(2) {
+
+    -webkit-clip-path: polygon(100% 0, 100% 100%, 50% 50%);
 
     clip-path: polygon(100% 0, 100% 100%, 50% 50%);
 }
 
 .animated_text a:nth-child(3) {
 
+    -webkit-clip-path: polygon(0 100%, 50% 50%, 100% 100%);
+
     clip-path: polygon(0 100%, 50% 50%, 100% 100%);
 }
 
 .animated_text a:nth-child(4) {
 
+    -webkit-clip-path: polygon(0 0, 50% 50%, 0 100%);
+
     clip-path: polygon(0 0, 50% 50%, 0 100%);
 }
 
 .animated_text a:hover {
+    -webkit-clip-path: none;
     clip-path: none;
     z-index: 2;
 }
@@ -77,12 +87,32 @@
     -webkit-font-smoothing: antialiased;
 }
 
-@keyframes textanim {
+@-webkit-keyframes textanim {
     0% {
+
+        -webkit-clip-path: var(--from);
 
         clip-path: var(--from);
     }
     100% {
+
+        -webkit-clip-path: var(--to);
+
+        clip-path: var(--to);
+        color: var(--color-of-text);
+    }
+}
+
+@keyframes textanim {
+    0% {
+
+        -webkit-clip-path: var(--from);
+
+        clip-path: var(--from);
+    }
+    100% {
+
+        -webkit-clip-path: var(--to);
 
         clip-path: var(--to);
         color: var(--color-of-text);
