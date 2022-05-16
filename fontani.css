@@ -5,13 +5,11 @@
 }
 
 .animated_text a {
-
     transform: translateY(-35%) translateX(-15%);
     position: absolute;
-    width: 125%;
-    height: 25%;
+    width: 250%;
+    height: 400%;
     z-index: 1;
-
 }
 
 .animated_text a:nth-child(1) {
@@ -35,7 +33,6 @@
 }
 
 .animated_text a:hover {
-
     clip-path: none;
     z-index: 2;
 }
@@ -49,7 +46,7 @@
 
 .animated_text a:nth-child(2):hover ~ .text:before {
     --from: circle(0% at 150% 50%);
-    --to: circle(100% at 50% 50%);
+    --to: circle(150% at 50% 50%);
     -webkit-animation: textanim 1s forwards;
     animation: textanim 1s forwards;
 }
