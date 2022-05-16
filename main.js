@@ -1,5 +1,6 @@
 new fullpage("#fullpage", {
-    
+    autoScrolling: true,
+    continuousVertical: true
 });
 
 const xyz = document.getElementById("main");
