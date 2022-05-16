@@ -58,7 +58,7 @@ body::-webkit-scrollbar {
     border-radius: 0.5rem 0.5rem 0 0;
     transition-duration: 500ms;
     background-color: #ffffff;
-    padding: 3rem 4rem;
+    padding: 4rem 4rem;
 }
 
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
