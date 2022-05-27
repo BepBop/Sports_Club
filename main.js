@@ -163,9 +163,6 @@ sections2.addEventListener("click", () => {
         sections3.classList.add("og");
         sections4.classList.add("og");
         sections5.classList.add("og");
-
-        sections6.classList.remove("move_diagonal");
-        sections6.classList.add("next");
     }
 });
 
